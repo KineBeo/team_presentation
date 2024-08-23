@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import HeroSection from "@/components/HeroSection";
 import SericeTab from "@/components/ServiceTab";
 import BlogTab from "@/components/BlogTab";
+import TopicTab from "@/components/TopicTab";
 export default function Home() {
   return (
       <>
@@ -10,6 +11,7 @@ export default function Home() {
         <HeroSection/>
         <SericeTab/>
         <BlogTab/>
+        <TopicTab/>
         {/* Presentation
         Service 
         Blog 

@@ -31,13 +31,13 @@ export default function BlogTab() {
           </div>
         </div>
       </section>
-      <section className="flex flex-row justify-center items-center gap-4 m-4 h-[400px]">
+      <section className="flex flex-row mobile:flex-col justify-center items-center gap-4 m-4 h-[400px]">
         <section className="bg-black w-1/2 text-black bg-blog-pattern-3 bg-contain bg-no-repeat bg-right h-full">
           <div>
             <div className="px-4 py-12 flex flex-col md:flex-row items-center justify-between">
-              <div className="md:w-2/5 mb-8 md:mb-0 bg-white">
+              <div className="laptop:w-2/5 desktop:w-2/5 mb-8 md:mb-0 bg-white">
                 <div className="p-8">
-                  <div className="text-4xl mb-4 font-bold">
+                  <div className="text-4xl mobile:text-base tablet:text-lg mini-laptop:text-lg laptop:text-xl mb-4 font-bold">
                     NGINX One: A SaaS Solution for Modern App Management and
                     Delivery
                   </div>
@@ -50,9 +50,9 @@ export default function BlogTab() {
         <section className="bg-black w-1/2 text-black bg-blog-pattern-2 bg-auto bg-no-repeat bg-right h-full">
           <div>
             <div className="px-4 py-12 flex flex-col md:flex-row items-center justify-between">
-              <div className="md:w-2/5 mb-8 md:mb-0 bg-white">
+              <div className="laptop:w-2/5 desktop:w-2/5 mb-8 md:mb-0 bg-white">
                 <div className="p-8">
-                  <p className="text-4xl mb-4 font-bold">
+                  <p className="text-4xl mobile:text-base tablet:text-lg mini-laptop:text-lg laptop:text-xl mb-4 font-bold">
                     Generative AI & Emerging Data Type Impact App Architecture
                   </p>
                   <p className="mb-6 font-bold text-lg">

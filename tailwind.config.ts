@@ -15,6 +15,7 @@ const config: Config = {
         'blog-pattern': "url('/images/Blog.jpg')",
         'blog-pattern-2': "url('/images/blog2.webp')",
         'blog-pattern-3': "url('/images/welcome-to-nginx.socialImage.png')",
+        'topic-pattern-1': "url('/images/topic1.jpg')",
       }
     },
     screens: {

@@ -10,7 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-
+      backgroundImage: {
+        'hero-pattern': "url('/images/HeroSection.png')",
+      }
     },
     screens: {
       mobile: {

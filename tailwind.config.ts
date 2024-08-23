@@ -12,6 +12,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/images/HeroSection.png')",
+        'blog-pattern': "url('/images/Blog.jpg')",
+        'blog-pattern-2': "url('/images/blog2.webp')",
+        'blog-pattern-3': "url('/images/welcome-to-nginx.socialImage.png')",
       }
     },
     screens: {

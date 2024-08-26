@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 // import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
-
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 const footerSections = [
   {
     title: 'WHAT WE OFFER',
@@ -39,6 +40,20 @@ const footerSections = [
       'Login to Partner Central',
     ],
   },
+  {
+    title: 'COMPANY',
+    items: [
+      'Contact Information',
+      'Compliance',
+      'Careers',
+      'Events',
+      'Diversity & Inclusion',
+      'Newsroom',
+      'Blog',
+      'Investor Relations',
+      'F5 NGINX'
+    ]
+  }
 ];
 
 export default function FooterAccordion() {
@@ -56,23 +71,22 @@ export default function FooterAccordion() {
     <footer className="text-white p-8">
       <div className="max-w-6xl mx-auto">
         {footerSections.map((section, index) => (
-          <div key={index} className="border-b border-gray-700 py-4">
+          <div key={index} className="border-t border-gray-700 py-4">
             <div 
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleSection(index)}
             >
               <h2 className="font-bold text-lg">{section.title}</h2>
               {openSections.includes(index) ? (
-                // <ChevronUpIcon className="h-5 w-5" />
-                <div>up</div>
+                <MdKeyboardArrowUp className="h-10 w-10" />
               ) : (
-                <div>down</div>
+                <MdKeyboardArrowDown className="h-10 w-10" />
               )}
             </div>
             {openSections.includes(index) && (
               <ul className="mt-2 space-y-2">
                 {section.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="text-white hover:underline font-bold">
+                  <li key={itemIndex} className="text-white hover:underline font-semibold">
                     <a href="#">{item}</a>
                   </li>
                 ))}

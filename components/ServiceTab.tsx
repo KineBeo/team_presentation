@@ -6,7 +6,7 @@ import ServiceCard from "./ServiceCard";
 export default function App() {
   return (
     <div className="flex flex-col mt-8">
-      <div className="justify-center flex text-6xl font-bold m-4 text-center">
+      <div className="justify-center flex mobile:text-3xl tablet:text-3xl text-5xl font-bold m-4 text-center">
         Secure Every App
       </div>
       <Tabs

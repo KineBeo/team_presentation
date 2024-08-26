@@ -3,10 +3,10 @@ import React from "react";
 import TopicCard from "./TopicCard";
 export default function TopicTab() {
   return (
-    <div>
-    <div className="flex justify-center items-center font-bold text-4xl laptop:text-5xl desktop:text-5xl m-4 p-4">
+    <div className="mt-40">
+      <div className="flex justify-center items-center font-bold text-4xl laptop:text-5xl desktop:text-5xl m-4 p-4">
         Trending Topics
-    </div>
+      </div>
       <div className="flex justify-center">
         <div className="grid grid-cols-1 laptop:grid-cols-3 desktop:grid-cols-3">
           <TopicCard

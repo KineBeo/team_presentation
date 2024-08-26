@@ -23,10 +23,10 @@ export default function NavBar() {
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="mobile:flex hidden"
+          className="mobile:flex tablet:flex hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit text-2xl">F5</p>
+          <p className="font-bold text-2xl">F5</p>
         </NavbarBrand>
       </NavbarContent>
 

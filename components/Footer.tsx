@@ -1,8 +1,9 @@
 import React from "react";
 import FooterAccordion from "./FooterAccordion";
+import { Divider } from "@nextui-org/react";
 export default function Footer() {
   return (
-    <div className="h-[1200px] text-white">
+    <div className="h-[1200px] text-white mt-16">
       <div className="bg-[#222222] h-full">
         <div className="">
           <div className="flex flex-row h-full">
@@ -27,7 +28,6 @@ export default function Footer() {
           <div>
             <FooterAccordion />
           </div>
-          <div></div>
         </div>
       </div>
     </div>

@@ -5,15 +5,15 @@ export default function BlogTab() {
   return (
     <div>
       <section className="bg-black text-white bg-blog-pattern bg-contain bg-no-repeat bg-right m-4">
-        <div className="container mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between">
+        <div className="mx-auto px-4 py-12 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <div className="text-lg font-bold mb-4">
+            <div className="mobile:text-md tablet:text-md text-lg font-bold mb-4">
               2024 STATE OF AI APPLICATION STRATEGY REPORT
             </div>
-            <p className="text-5xl mb-4 font-bold">
+            <p className="mobile:text-2xl tablet:text-2xl text-4xl mb-4 font-bold">
               18% of IT Budgets Today Are Allocated to AI
             </p>
-            <p className="mb-6 font-bold text-lg">
+            <p className="mb-6 font-semibold mobile:text-lg tablet:text-lg text-xl">
               AI deployments are exploding, but few organizations are positioned
               for success. Explore the promises and pitfalls revealed by our
               research in the 2024 State of AI Application Strategy Report.
@@ -31,8 +31,8 @@ export default function BlogTab() {
           </div>
         </div>
       </section>
-      <section className="flex flex-row mobile:flex-col justify-center items-center gap-4 m-4 h-[400px]">
-        <section className="bg-black w-1/2 text-black bg-blog-pattern-3 bg-contain bg-no-repeat bg-right h-full">
+      <div className="flex flex-row mobile:flex-col justify-center items-center gap-4 m-4 h-[400px]">
+        {/* <section className="bg-black w-1/2 text-black bg-blog-pattern-3 bg-contain bg-no-repeat bg-right h-full">
           <div>
             <div className="px-4 py-12 flex flex-col md:flex-row items-center justify-between">
               <div className="laptop:w-2/5 desktop:w-2/5 mb-8 md:mb-0 bg-white">
@@ -46,7 +46,7 @@ export default function BlogTab() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="bg-black w-1/2 text-black bg-blog-pattern-2 bg-auto bg-no-repeat bg-right h-full">
           <div>
             <div className="px-4 py-12 flex flex-col md:flex-row items-center justify-between">
@@ -63,7 +63,7 @@ export default function BlogTab() {
             </div>
           </div>
         </section>
-      </section>
+      </div>
     </div>
   );
 }

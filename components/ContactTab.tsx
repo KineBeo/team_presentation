@@ -15,7 +15,7 @@ export default function ContactTab() {
         laptop:p-10
         desktop:p-12"
         >
-          Next Steps...
+          Next Steps
         </div>
       </div>
       <div className="flex justify-center m-4">

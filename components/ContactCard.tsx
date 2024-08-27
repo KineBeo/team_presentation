@@ -15,7 +15,7 @@ interface ContactCardProps {
 }
 export default function ContactCard(props: ContactCardProps) {
     return (
-        <Card className={`max-w-[350px] hover:scale-105`}>
+        <Card className="max-w-[350px] hover:scale-105">
             <CardHeader className="justify-center">
                 <div className="flex gap-5 text-5xl">
                     {props.icon}

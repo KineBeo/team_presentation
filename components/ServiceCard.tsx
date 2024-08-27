@@ -16,7 +16,7 @@ interface ServiceCardProps {
 }
 export default function ServiceCard(props: ServiceCardProps) {
   return (
-      <Card className={`max-w-[370px] hover:scale-105 duration-100`}>
+      <Card className="max-w-[370px] hover:scale-105 duration-100">
         <CardHeader className="justify-center">
             {/* icon here */}
           <div className="flex gap-5 text-5xl">

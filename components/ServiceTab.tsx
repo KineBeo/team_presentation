@@ -2,6 +2,16 @@
 import React from "react";
 import { Tabs, Tab, Card, CardBody, Switch } from "@nextui-org/react";
 import ServiceCard from "./ServiceCard";
+import { IoLogoAppleAr } from "react-icons/io5";
+import { IoCloudDoneOutline } from "react-icons/io5";
+import { GrDocumentPerformance } from "react-icons/gr";
+import { GoShieldCheck } from "react-icons/go";
+import { MdOutlineFingerprint } from "react-icons/md";
+import { MdSecurity } from "react-icons/md";
+import { BsBank } from "react-icons/bs";
+import { TfiWorld } from "react-icons/tfi";
+import { PiHeartbeat } from "react-icons/pi";
+import { BsCart4 } from "react-icons/bs";
 
 export default function App() {
   return (
@@ -17,7 +27,7 @@ export default function App() {
         <Tab
           key="by_solution"
           title="By Solution Area"
-          className="text-2xl mobile:text-xl tablet:text-xl m-2"
+          className="text-2xl mobile:text-lg tablet:text-lg m-2"
         >
           <div className="flex justify-center mt-4">
             <div
@@ -27,32 +37,32 @@ export default function App() {
                         m-4"
             >
               <ServiceCard
-              cardWidth="350px"
+                icon={<IoLogoAppleAr />}
                 body_text="Web Application and API Protection"
                 footer_text="Reduce risk and complexity so you can continue moving your business forward."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<IoCloudDoneOutline />}
                 body_text="Secure Multicloud Networking"
                 footer_text="Connect, secure, and manage apps and APIs across distributed multicloud and hybrid networks."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<GrDocumentPerformance />}
                 body_text="Application and Network Performance"
                 footer_text="Increase availability and performance of your apps to optimize user experience"
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<GoShieldCheck />}
                 body_text="Modern Application Delivery"
                 footer_text="Meet customer demands and improve digital experiences."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<MdOutlineFingerprint />}
                 body_text="Fraud and Abuse Prevention"
                 footer_text="Protect against fraud while keeping apps available for legitimate users."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<MdSecurity />}
                 body_text="Zero Trust Security"
                 footer_text="Prevent unauthorized access to your networks, applications, and APIs"
               />
@@ -72,27 +82,27 @@ export default function App() {
                         m-4"
             >
               <ServiceCard
-              cardWidth="350px"
+                icon={<BsBank />}
                 body_text="Banking and Financial Services"
                 footer_text="Digital transformation is redefining FinServ experiences to meet customer expectations."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<IoLogoAppleAr />}
                 body_text="Public Sector"
                 footer_text="Mission success hinges on applications that deliver secure, dependable customer experiences."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<TfiWorld />}
                 body_text="Service Providers"
                 footer_text="Distributed networks are essential for traffic volumes, speed, and reduced latency."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<PiHeartbeat />}
                 body_text="Healthcare"
                 footer_text="Healthcare's digital transformation is accelerating and so are the cyberattacks against it. Unified fraud preventation is key."
               />
               <ServiceCard
-              cardWidth="350px"
+                icon={<BsCart4 />}
                 body_text="Ecommerce"
                 footer_text="Stop automated bot and human attacks from affecting customer experiences and sales"
               />

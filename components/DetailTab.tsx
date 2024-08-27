@@ -1,4 +1,8 @@
 import ServiceCard from "./ServiceCard";
+import { GrGroup } from "react-icons/gr";
+import { SiF5 } from "react-icons/si";
+import { SiFlatpak } from "react-icons/si";
+
 export default function DetailTab() {
   return (
     <div className="">
@@ -22,17 +26,17 @@ export default function DetailTab() {
         grid grid-cols-1 mini-laptop:grid-cols-3 laptop:grid-cols-3 desktop:grid-cols-3"
         >
           <ServiceCard
-            cardWidth="350px"
+            icon={<SiF5 />}
             body_text="F5 Labs"
             footer_text="Get the who, what, when, and what's next in cyberattacks to inform your security."
           />
           <ServiceCard
-            cardWidth="350px"
+            icon={<SiFlatpak />}
             body_text="DevCentral"
             footer_text="The DevCentral user community is a place to share, connect, ask, and learn. about all things tech related."
           />
           <ServiceCard
-            cardWidth="350px"
+            icon={<GrGroup />}
             body_text="Office of the CTO"
             footer_text="Explore our thought leaders' strategic insights on trending topics like digital transformation, the future of app services, and the evolution toward an Al- assisted future."
           />

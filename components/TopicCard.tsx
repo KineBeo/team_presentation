@@ -16,7 +16,7 @@ interface TopicCardProps {
 export default function TopicCard(props: TopicCardProps) {
   return (
     <Card 
-      className="max-w-[350px] m-4"
+      className="max-w-[600px] m-4"
       radius="none"
       shadow="md"
       isPressable
@@ -28,7 +28,7 @@ export default function TopicCard(props: TopicCardProps) {
           radius="none"
           width="100%"
           alt={props.title}
-          className="w-full h-[200px] object-cover"
+          className="w-full object-cover"
           src={props.background}
         />
       </CardHeader>

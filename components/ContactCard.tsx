@@ -12,19 +12,15 @@ interface ContactCardProps {
   button_text: string;
   footer_text: string;
   cardWidth: string;
+  icon: React.ReactNode;
 }
 export default function ContactCard(props: ContactCardProps) {
     return (
         <Card className={`max-w-[${props.cardWidth}] hover:scale-105`}>
             <CardHeader className="justify-center">
                 {/* icon here */}
-                <div className="flex gap-5">
-                    <Avatar
-                        isBordered
-                        radius="sm"
-                        size="lg"
-                        src="https://nextui.org/avatars/avatar-1.png"
-                    />
+                <div className="flex gap-5 text-5xl">
+                    {props.icon}
                 </div>
             </CardHeader>
             <CardBody className="p-4 text-center">

@@ -1,4 +1,6 @@
 import ServiceCard from "./ServiceCard";
+import { VscAccount } from "react-icons/vsc";
+import { SlPeople } from "react-icons/sl";
 
 export default function SupportTab() {
   return (
@@ -24,12 +26,12 @@ export default function SupportTab() {
         grid grid-cols-1 mini-laptop:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2"
         >
           <ServiceCard
-            cardWidth="350px"
+            icon={<VscAccount />}
             body_text="MyF5"
             footer_text="One place to get support and manage your software subscriptions and BIG-IP VE registration keys."
           />
           <ServiceCard
-            cardWidth="350px"
+            icon={<SlPeople />}
             body_text="Partner Central"
             footer_text="Sales and marketing resources and support for F5 partners."
           />

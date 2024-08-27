@@ -57,40 +57,44 @@ const footerSections = [
 ];
 
 export default function FooterAccordion() {
-  const [openSection, setOpenSection] = useState<number | null>(null);
+  const [openSections, setOpenSections] = useState<number[]>([]);
 
   const toggleSection = (index: number) => {
-    setOpenSection(prev => prev === index ? null : index);
+    setOpenSections(prev =>
+      prev.includes(index)
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
   };
 
   return (
-    <div className="bg-[#222222] text-white">
-      {footerSections.map((section, index) => (
-        <div key={index} className="border-b border-gray-700">
-          <button
-            className="w-full flex justify-between items-center py-4 px-6 focus:outline-none"
-            onClick={() => toggleSection(index)}
-          >
-            <h2 className="font-bold text-lg">{section.title}</h2>
-            {openSection === index ? (
-              <MdKeyboardArrowUp className="h-6 w-6" />
-            ) : (
-              <MdKeyboardArrowDown className="h-6 w-6" />
-            )}
-          </button>
-          {openSection === index && (
-            <div className="px-6 pb-4">
-              <ul className="space-y-2">
+    <footer className="text-white p-8">
+      <div className="max-w-6xl mx-auto">
+        {footerSections.map((section, index) => (
+          <div key={index} className="border-t border-gray-700 py-4">
+            <div 
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => toggleSection(index)}
+            >
+              <h2 className="font-bold text-lg">{section.title}</h2>
+              {openSections.includes(index) ? (
+                <MdKeyboardArrowUp className="h-10 w-10" />
+              ) : (
+                <MdKeyboardArrowDown className="h-10 w-10" />
+              )}
+            </div>
+            {openSections.includes(index) && (
+              <ul className="mt-2 space-y-2">
                 {section.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="text-white hover:underline">
+                  <li key={itemIndex} className="text-white hover:underline font-semibold">
                     <a href="#">{item}</a>
                   </li>
                 ))}
               </ul>
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </footer>
   );
-}
+};

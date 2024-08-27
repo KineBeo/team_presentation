@@ -18,8 +18,7 @@ export default function NavBar() {
   ];
 
   return (
-    // Responsive here
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="mt-16">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

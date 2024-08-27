@@ -18,7 +18,7 @@ export default function ContactTab() {
           Next Steps
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center m-4">
         <div className="gap-4 grid grid-cols-1 mini-laptop:grid-cols-3 laptop:grid-cols-3 desktop:grid-cols-3">
           <ContactCard
             icon={<TbSettingsShare />}

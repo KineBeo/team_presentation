@@ -14,7 +14,7 @@ export default function TopicTab() {
               background="/images/image-2.png"
               category="blog"
               title="At F5, Ridiculously Easy App Security and Delivery Is Our Guiding Light"
-              description="Seven years ago, F5 was a data center load- balancing specialist, and close to 90% of our product revenues came from perpetual hardware sales into on-prem environments. It's clear today that distributed architectures are the new standard-whether businesses have planned for it or not."
+              description="Seven years ago, F5 was a data center load- balancing specialist, and close to 90% of our product revenues came from perpetual hardware sales into on-prem environments. It&apos;s clear today that distributed architectures are the new standard-whether businesses have planned for it or not."
             />
             <TopicCard
               category="blog"

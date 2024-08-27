@@ -39,7 +39,7 @@ export default function ContactTab() {
             cardWidth="350px"
             body_text="Find a reseller"
             button_text="Find a partner"
-            footer_text="We're dedicated to building. partnerships that drive your business forward."
+            footer_text="We&apos;re dedicated to building partnerships that drive your business forward."
           />
         </div>
       </div>

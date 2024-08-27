@@ -19,7 +19,7 @@ export default function Footer() {
               Secure and Deliver Extraordinary Digital Experiences
             </div>
             <div className="text-xl p-4 m-4 font-bold tablet:p-8 mini-laptop:p-10 laptop:p-12 desktop:p-14">
-              F5's portfolio of automation, security, performance, and insight
+              F5&apos;s portfolio of automation, security, performance, and insight
               capabilities empowers our customers to create, secure, and operate
               adaptive applications that reduce costs, improve operations, and
               better protect users. Learn more

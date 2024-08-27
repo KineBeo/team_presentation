@@ -28,7 +28,7 @@ export default function DetailTab() {
           <ServiceCard
             icon={<SiF5 />}
             body_text="F5 Labs"
-            footer_text="Get the who, what, when, and what's next in cyberattacks to inform your security."
+            footer_text="Get the who, what, when, and what&apos;s next in cyberattacks to inform your security."
           />
           <ServiceCard
             icon={<SiFlatpak />}
@@ -38,7 +38,7 @@ export default function DetailTab() {
           <ServiceCard
             icon={<GrGroup />}
             body_text="Office of the CTO"
-            footer_text="Explore our thought leaders' strategic insights on trending topics like digital transformation, the future of app services, and the evolution toward an Al- assisted future."
+            footer_text="Explore our thought leaders&apos; strategic insights on trending topics like digital transformation, the future of app services, and the evolution toward an Al- assisted future."
           />
         </div>
       </div>

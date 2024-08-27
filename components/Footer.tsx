@@ -4,13 +4,15 @@ import { Divider } from "@nextui-org/react";
 import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { TbBrandDiscord } from "react-icons/tb";
+import { TbBrandMinecraft } from "react-icons/tb";
+
 
 export default function Footer() {
   return (
       <div className="bg-[#222222] text-white mt-8 pb-4">
         <div className="">
-          <div className="flex flex-row h-full">
-            <div className="bg-orange-400 flex-1">.</div>
+          <div className="flex flex-row h-[20px]">
+            <div className="bg-orange-400 flex-1"></div>
             <div className="bg-red-500 flex-1"> </div>
             <div className="bg-purple-500 flex-1"></div>
             <div className="bg-blue-500 flex-1"></div>
@@ -25,7 +27,7 @@ export default function Footer() {
               F5&apos;s portfolio of automation, security, performance, and
               insight capabilities empowers our customers to create, secure, and
               operate adaptive applications that reduce costs, improve
-              operations, and better protect users. Learn more
+              operations, and better protect users. <a href="" className="underline">Learn more</a>
             </div>
           </div>
           <div className="mt-8">
@@ -44,11 +46,7 @@ export default function Footer() {
           </div>
           <div className="m-8 text-sm">
             <div className="mb-4 flex justify-center gap-4">
-              {/* <img
-                src="/path-to-f5-logo.png"
-                alt="F5 Logo"
-                className="h-8 w-8 mr-2"
-              /> */} <div>nigga</div>
+              <TbBrandMinecraft size={30} />
               <p>©2024 F5, Inc. All rights reserved.</p>
             </div>
             <div className="space-x-4 flex justify-center font-semibold">

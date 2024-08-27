@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="bg-black text-white h-[400px] bg-hero-pattern bg-contain bg-no-repeat bg-right">
+    <section className="bg-black text-white laptop:bg-hero-pattern desktop:bg-hero-pattern bg-contain bg-no-repeat bg-right">
       <div
         className="bg-yellow-300 text-black py-2 text-center 
       mobile:text-md 
@@ -15,8 +15,15 @@ export default function HeroSection() {
           Save the date for AppWorld 2025 —February 25-27 in Las Vegas!
         </p>
       </div>
-      <div className="p-6 flex flex-col mini-laptop:flex-row laptop:flex-row desktop:flex-row items-center justify-between">
-        <div className="md:w-1/2">
+      <div className="p-6 flex">
+        <div
+          className="
+        mobile:w-full mobile:px-4 
+        tablet:w-full tablet:px-8 
+        mini-laptop:w-full mini-laptop:px-10 
+        laptop:w-1/2 laptop:px-20 
+        desktop:w-1/2 desktop:px-40"
+        >
           <h1 className="mobile:text-2xl tablet:text-2xl text-5xl font-bold mb-4">
             &quot;F5 invented API security.&quot;
           </h1>
@@ -27,11 +34,22 @@ export default function HeroSection() {
             Enterprise Management Associates (EMA) has named F5 as a Visionary
             in its recently published 2024 Vendor Vision report.
           </p>
-          <Link href="#">
+          <Link href="#" className="mobile:hidden">
             <Button
               color="primary"
-              size="md"
+              size="lg"
               radius="sm"
+              className="hover:scale-110 transition duration-110 text-white font-bold"
+            >
+              Find out more
+            </Button>
+          </Link>
+          <Link href="#" className="mobile:flex hidden justify-center p-4">
+            <Button
+              color="primary"
+              size="lg"
+              radius="sm"
+              variant="solid"
               className="hover:scale-110 transition duration-110 text-white font-bold"
             >
               Find out more

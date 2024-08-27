@@ -11,14 +11,12 @@ interface ContactCardProps {
   body_text: string;
   button_text: string;
   footer_text: string;
-  cardWidth: string;
   icon: React.ReactNode;
 }
 export default function ContactCard(props: ContactCardProps) {
     return (
-        <Card className={`max-w-[${props.cardWidth}] hover:scale-105`}>
+        <Card className={`max-w-[350px] hover:scale-105`}>
             <CardHeader className="justify-center">
-                {/* icon here */}
                 <div className="flex gap-5 text-5xl">
                     {props.icon}
                 </div>

@@ -1,8 +1,9 @@
 'use client'
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Input} from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Input } from "@nextui-org/react";
 import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
+import SolutionMenu from "./SolutionMenu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -41,7 +42,7 @@ export default function NavBar() {
       font-bold mx-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
-            SOLUTIONS
+            <SolutionMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -88,7 +89,7 @@ export default function NavBar() {
           startContent={<FiSearch size={30} />}
           type="search"
         />
-        </NavbarContent>
+      </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>

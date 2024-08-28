@@ -51,13 +51,6 @@ export default function ProductMenu() {
                                     </p>
                                     <IoIosArrowForward className="text-2xl text-white" />
                                 </button>
-
-                                <button className="flex items-center pt-4 h-12 text-white hover:underline cursor-pointer">
-                                    <p className="ml-8 w-[300px] h-8 text-left text-white group-hover:underline">
-                                        F5 Distributed Cloud Services
-                                    </p>
-                                    <IoIosArrowForward className="text-2xl text-white" />
-                                </button>
                             </div>
                             <div>
 

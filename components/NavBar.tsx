@@ -42,7 +42,7 @@ export default function NavBar() {
       font-bold mx-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
-            <SolutionMenu />
+            <SolutionMenu/>
           </Link>
         </NavbarItem>
         <NavbarItem>

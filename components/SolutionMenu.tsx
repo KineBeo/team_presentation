@@ -11,6 +11,7 @@ import {
 import { IoIosArrowForward } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import React, { useState, useMemo } from "react";
+import { Label } from "flowbite-react";
 
 // Định nghĩa các kiểu dữ liệu
 type ButtonId = "solutionArea" | "industry" | "cloudPartners";
@@ -140,7 +141,9 @@ export default function SolutionMenu() {
 
   return (
     <div>
-      <NavbarItem onClick={onOpen}>SOLUTIONS</NavbarItem>
+      <Label onClick={onOpen} className="font-bold text-base ">
+        SOLUTIONS
+      </Label>
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
@@ -148,7 +151,7 @@ export default function SolutionMenu() {
         size="full"
       >
         <ModalContent className="w-full h-full lg:w-[1300px]">
-          <ModalBody className="flex flex-col lg:flex-row p-0 overflow-auto">
+          <ModalBody className="flex flex-col h-full lg:flex-row p-0 overflow-auto">
             <Sidebar
               selectedButton={selectedButton}
               onButtonClick={handleButtonClick}
@@ -203,7 +206,7 @@ const Sidebar: React.FC<{
 
 // QuickLinks Component
 const QuickLinks: React.FC = () => (
-  <div className="flex flex-col space-y-6 pt-12 mb-12 w-full lg:w-[400px] pr-6 lg:pr-16 justify-start h-full">
+  <div className="flex flex-col space-y-6 pt-12  w-full lg:w-[400px] pr-6 lg:pr-16 justify-start h-full">
     <div className="bg-gray-100 p-4">
       <h2 className="text-xl font-bold mb-4">Quick Links</h2>
       <ul className="space-y-2">
@@ -234,7 +237,7 @@ const QuickLinks: React.FC = () => (
         </li>
       </ul>
     </div>
-    <div className="flex flex-col bg-black p-8 lg:p-12 pb-24 text-white h-full items-center justify-center">
+    <div className="flex flex-col bg-black p-8 lg:p-12 mb-12 text-white h-full items-center justify-center">
       <div className="mb-4 w-full">
         <img
           src="/images/home-solu-power-and-protect.png"

@@ -3,7 +3,7 @@ import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Input } from "@nextui-org/react";
 import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
-import ProductMenu from "./ProductMenu";
+import ProductMenu from "./menu/ProductMenu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

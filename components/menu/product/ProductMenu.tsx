@@ -1,16 +1,15 @@
-import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, NavbarItem, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalBody, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import MenuItem from "./MenuItem";
 import { Label } from "flowbite-react";
-import { AiOutlineCloudServer } from "react-icons/ai";
-import MenuItemContent from "./MenuItemContent";
-
-
+import MenuItem from "../MenuItem";
+import F5_Distributed_Cloud_Service from "./F5_Distributed_Cloud_Service";
+import F5_NGINX from "./F5_NGINX";
+import F5_BIG_IP from "./F5_BIG_IP";
+import F5_Systems from "./F5_Systems";
 
 export default function ProductMenu() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-    const [activeButton, setActiveButton] = useState(1);
+    const [activeButton, setActiveButton] = useState(0);
 
     const menuItems = [
         "F5 Distributed Cloud Services",
@@ -31,10 +30,11 @@ export default function ProductMenu() {
                 onOpenChange={onOpenChange}
                 scrollBehavior="inside"
                 size="full"
+                className="h-screen" // Ensure the modal takes full viewport height
             >
-                <ModalContent className="w-[1400px]">
+                <ModalContent className="p-0 w-[1400px] h-full">
                     {(onClose) => (
-                        <ModalBody className="flex flex-row p-0">
+                        <ModalBody className="flex flex-row p-0 h-full"> {/* Ensure ModalBody is full height */}
                             <div className="flex-col justify-center items-center bg-sky-800 w-[400px] h-full">
                                 <div className="flex justify-between items-end mt-12 border-b-2 w-full h-12">
                                     <p className="mb-2 ml-8 font-bold text-2xl text-white">PRODUCTS</p>
@@ -47,22 +47,11 @@ export default function ProductMenu() {
                                     </MenuItem>
                                 ))}
                             </div>
-
-                            <div className="flex flex-row mt-12 h-full">
-                                <div className="flex-col px-12 w-[600px]">
-                                    <div>
-                                        <AiOutlineCloudServer className="text-9xl" />
-                                        <h1 className="font-bold text-4xl">F5 Distributed Cloud Services {'>'}</h1>
-                                        <p className="pt-6 pb-8">Leverage a cloud-native environment to simplify app deployment, security, connectivity and operations.</p>
-                                    </div>
-                                    <div className="grid grid-cols-2">
-                                        <MenuItemContent />
-
-                                    </div>
-                                </div>
-                                <div className="flex-col bg-gray-400 w-[400px] h-full">
-
-                                </div>
+                            <div className="flex-grow h-full overflow-auto"> {/* Wrapper for content components */}
+                                {activeButton === 0 && <F5_Distributed_Cloud_Service />}
+                                {activeButton === 1 && <F5_NGINX />}
+                                {activeButton === 2 && <F5_BIG_IP />}
+                                {activeButton === 3 && <F5_Systems />}
                             </div>
                         </ModalBody>
                     )}

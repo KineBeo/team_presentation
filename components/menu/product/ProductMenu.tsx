@@ -37,7 +37,7 @@ export default function ProductMenu() {
                         <ModalBody className="flex flex-row p-0 h-full"> {/* Ensure ModalBody is full height */}
                             <div className="flex-col justify-center items-center bg-sky-800 w-[400px] h-full">
                                 <div className="flex justify-between items-end mt-12 border-b-2 w-full h-12">
-                                    <p className="mb-2 ml-8 font-bold text-2xl text-white">NIGGER</p>
+                                    <p className="mb-2 ml-8 font-bold text-2xl text-white">PRODUCTS</p>
                                     <p className="mr-8 mb-2 text-white cursor-pointer">View all {">"} </p>
                                 </div>
 

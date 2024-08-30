@@ -19,6 +19,7 @@ import SolutionMenuMobile from "./menu/solution/SolutionMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [navBarState, setNavBarState] = React.useState('menu');
 
   const menuItems = [
     "Solutions",
@@ -33,7 +34,7 @@ export default function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl">
+    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" shouldHideOnScroll>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -62,7 +63,7 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            PRODUCTS
+            <ProductMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -125,7 +126,7 @@ export default function NavBar() {
               href="#"
               size="lg"
             >
-              {item}
+              {index === 1 ? <ProductMenuMobile /> : item}
             </Link>
             {index === 0 ? <SolutionMenuMobile /> : <> </>}
           </NavbarMenuItem>

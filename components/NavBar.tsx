@@ -1,8 +1,21 @@
-'use client'
+"use client";
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Input} from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+  Input,
+} from "@nextui-org/react";
 import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
+import SolutionMenu from "./Menu/solution/SolutionMenu";
+import SolutionMenuMobile from "./Menu/solution/SolutionMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -32,16 +45,19 @@ export default function NavBar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="
+      <NavbarContent
+        className="
       hidden 
       mini-laptop:flex
       laptop:flex
       desktop:flex
       gap-4 
-      font-bold mx-4" justify="center">
+      font-bold mx-4"
+        justify="center"
+      >
         <NavbarItem>
           <Link color="foreground" href="#">
-            SOLUTIONS
+            <SolutionMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -75,26 +91,35 @@ export default function NavBar() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent as="div" className="items-center mobile:hidden tablet:hidden" justify="end">
+      <NavbarContent
+        as="div"
+        className="items-center mobile:hidden tablet:hidden"
+        justify="end"
+      >
         <Input
           classNames={{
             base: "w-3/4 h-10",
             mainWrapper: "h-full",
             input: "text-small",
-            inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
+            inputWrapper:
+              "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
           }}
           placeholder="Type to search..."
           size="sm"
           startContent={<FiSearch size={30} />}
           type="search"
         />
-        </NavbarContent>
+      </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2
+                  ? "primary"
+                  : index === menuItems.length - 1
+                  ? "danger"
+                  : "foreground"
               }
               className="w-full"
               href="#"
@@ -102,6 +127,7 @@ export default function NavBar() {
             >
               {item}
             </Link>
+            {index === 0 ? <SolutionMenuMobile /> : <> </>}
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

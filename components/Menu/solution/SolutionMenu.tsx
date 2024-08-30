@@ -8,6 +8,7 @@ import {
   NavbarItem,
   useDisclosure,
 } from "@nextui-org/react";
+import QuickLinks from "../QuickLinks";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import React, { useState, useMemo } from "react";
@@ -28,6 +29,28 @@ interface SolutionCardProps {
   description: string;
   links: LinkItem[];
 }
+const QUICK_LINKS = [
+  {
+    title: "Customer Case Studies",
+    url: "#",
+  },
+  {
+    title: "Product Datasheets",
+    url: "#",
+  },
+  {
+    title: "Professional Services",
+    url: "#",
+  },
+  {
+    title: "Software Download",
+    url: "#",
+  },
+  {
+    title: "View All F5 Resources",
+    url: "#",
+  },
+];
 
 // Component chính = Sidebar + Solution card + Quick link
 export default function SolutionMenu() {
@@ -145,19 +168,40 @@ export default function SolutionMenu() {
         SOLUTIONS
       </Label>
       <Modal
+        className="mobile:flex tablet:hidden"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         scrollBehavior="inside"
         size="full"
       >
-        <ModalContent className="w-full h-full lg:w-[1300px]">
+        <ModalContent className="w-full h-full max-w-[1300px] mx-auto ">
           <ModalBody className="flex flex-col h-full lg:flex-row p-0 overflow-auto">
             <Sidebar
               selectedButton={selectedButton}
               onButtonClick={handleButtonClick}
             />
             <SolutionCard title={title} description={subtitle} links={links} />
-            <QuickLinks />
+            <div className="flex flex-col space-y-6 pt-12 w-full lg:w-[320px] pr-6 lg:pr-8 justify-start h-full">
+              <div className="bg-gray-100 p-4">
+                <QuickLinks links={QUICK_LINKS} />
+              </div>
+              <div className="flex flex-col bg-black p-8 lg:p-12 mb-12 text-white h-full items-center justify-center">
+                <div className="mb-4 w-full">
+                  <img
+                    src="/images/home-solu-power-and-protect.png"
+                    alt="Description Image"
+                    className="w-full rounded-lg"
+                  />
+                </div>
+                <p className="mb-4">
+                  Power and protect AI-based apps from the data center to the
+                  edge.
+                </p>
+                <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                  See how
+                </button>
+              </div>
+            </div>
           </ModalBody>
         </ModalContent>
       </Modal>
@@ -177,7 +221,7 @@ const Sidebar: React.FC<{
   ];
 
   return (
-    <div className="flex flex-col bg-sky-800 w-full lg:w-[400px] h-full pt-4">
+    <div className="flex flex-col bg-sky-800 w-full lg:w-[320px] h-screen">
       <div className="flex justify-between items-center mt-8 border-b-2 w-full h-12 px-2 lg:px-4">
         <p className="text-sm lg:text-base font-bold text-white">SOLUTIONS</p>
         <p className="text-xs lg:text-sm text-white cursor-pointer ml-4 lg:ml-8">
@@ -205,55 +249,6 @@ const Sidebar: React.FC<{
 };
 
 // QuickLinks Component
-const QuickLinks: React.FC = () => (
-  <div className="flex flex-col space-y-6 pt-12  w-full lg:w-[400px] pr-6 lg:pr-16 justify-start h-full">
-    <div className="bg-gray-100 p-4">
-      <h2 className="text-xl font-bold mb-4">Quick Links</h2>
-      <ul className="space-y-2">
-        <li>
-          <a href="#" className="text-sm text-blue-500 hover:underline">
-            Customer Case Studies
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-sm text-blue-500 hover:underline">
-            Product Datasheets
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-sm text-blue-500 hover:underline">
-            Professional Services
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-sm text-blue-500 hover:underline">
-            Software Download
-          </a>
-        </li>
-        <li>
-          <a href="#" className="text-sm text-blue-500 hover:underline">
-            View All F5 Resources
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div className="flex flex-col bg-black p-8 lg:p-12 mb-12 text-white h-full items-center justify-center">
-      <div className="mb-4 w-full">
-        <img
-          src="/images/home-solu-power-and-protect.png"
-          alt="Description Image"
-          className="w-full rounded-lg"
-        />
-      </div>
-      <p className="mb-4">
-        Power and protect AI-based apps from the data center to the edge.
-      </p>
-      <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-        See how
-      </button>
-    </div>
-  </div>
-);
 
 // SolutionCard Component
 const SolutionCard: React.FC<SolutionCardProps> = ({
@@ -263,7 +258,7 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
   links,
 }) => {
   return (
-    <div className="flex flex-col items-start p-6 lg:p-12 space-y-6 h-full w-full">
+    <div className="flex flex-col items-start p-6 lg:p-8 space-y-6 h-full w-full lg:w-[calc(100%-640px)]">
       <div className="flex items-center justify-center">
         {icon || <IoSettingsOutline className="w-16 lg:w-24 h-16 lg:h-24" />}
       </div>

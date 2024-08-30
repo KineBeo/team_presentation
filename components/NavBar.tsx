@@ -16,6 +16,8 @@ import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
 import SolutionMenu from "./menu/solution/SolutionMenu";
 import SolutionMenuMobile from "./menu/solution/SolutionMenuMobile";
+import ProductMenu from "./menu/product/ProductMenu";
+import ProductMenuMobile from "./menu/product/ProductMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

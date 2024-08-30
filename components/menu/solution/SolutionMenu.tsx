@@ -215,7 +215,7 @@ const Sidebar: React.FC<{
   onButtonClick: (buttonId: ButtonId) => void;
 }> = ({ selectedButton, onButtonClick }) => {
   const buttons: { id: ButtonId; label: string }[] = [
-    { id: "solutionArea", label: "By Solution Area" },
+    { id: "solutionArea", label: "By Solution Area." },
     { id: "industry", label: "By Industry" },
     { id: "cloudPartners", label: "By Cloud Partners" },
   ];

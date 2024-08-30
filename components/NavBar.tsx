@@ -14,8 +14,8 @@ import {
 } from "@nextui-org/react";
 import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
-import SolutionMenu from "./Menu/solution/SolutionMenu";
-import SolutionMenuMobile from "./Menu/solution/SolutionMenuMobile";
+import SolutionMenu from "./menu/solution/SolutionMenu";
+import SolutionMenuMobile from "./menu/solution/SolutionMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

@@ -4,9 +4,11 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Navba
 import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
 import ProductMenu from "./menu/product/ProductMenu";
+import ProductMenuMobile from "./menu/product/ProductMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [navBarState, setNavBarState] = React.useState('menu');
 
   const menuItems = [
     "Solutions",
@@ -21,7 +23,7 @@ export default function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl">
+    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" shouldHideOnScroll>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -88,14 +90,12 @@ export default function NavBar() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
+              color="foreground"
               className="w-full"
               href="#"
               size="lg"
             >
-              {item}
+              {index === 1 ? <ProductMenuMobile /> : item}
             </Link>
           </NavbarMenuItem>
         ))}

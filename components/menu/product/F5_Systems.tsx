@@ -1,5 +1,5 @@
 import { RiDatabaseLine } from "react-icons/ri";
-import MenuItemContent from "../MenuItemContent";
+import MenuItemContent, { MenuItemSubContent } from "../MenuItemContent";
 import QuickLinks from "../QuickLinks";
 import { Button } from "@nextui-org/react";
 
@@ -57,7 +57,22 @@ export default function F5_Systems() {
                     <p className="pt-6 pb-8">Deploy your applications on-premises, in the cloud, or both.</p>
                 </div>
                 <div className="flex">
-                    <MenuItemContent title="" items={F5_SYSTEMS} />
+                    <div className="flex flex-col">
+                        <MenuItemSubContent
+                            title={F5_SYSTEMS[0].title}
+                            description={F5_SYSTEMS[0].description} />
+                        <MenuItemSubContent
+                            title={F5_SYSTEMS[1].title}
+                            description={F5_SYSTEMS[1].description} />
+                    </div>
+                    <div className="flex flex-col">
+                        <MenuItemSubContent
+                            title={F5_SYSTEMS[2].title}
+                            description={F5_SYSTEMS[2].description} />
+                        <MenuItemSubContent
+                            title={F5_SYSTEMS[3].title}
+                            description={F5_SYSTEMS[3].description} />
+                    </div>
                 </div>
             </div>
             <div className="flex-col w-[350px] h-full">

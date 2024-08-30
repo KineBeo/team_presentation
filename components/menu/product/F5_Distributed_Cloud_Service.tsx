@@ -128,7 +128,7 @@ export default function F5_Distributed_Cloud_Service() {
                     <p className="pt-6 pb-8">Leverage a cloud-native environment to simplify app deployment, security, connectivity and operations.</p>
                 </div>
                 <div className="flex">
-                    <div className="flex flex-col">
+                    <div className="mini-laptop:flex desktop:flex-col laptop:flex-col">
                         <MenuItemContent title="Web App & API Protection" items={WEB_APP_API_PROTECTION} />
                         <MenuItemContent title="Fraud & Risk" items={FRAUD_AND_RISK} />
                         <MenuItemContent title="Multi-Cloud Networking" items={MULTI_CLOUD_NETWORKING} />

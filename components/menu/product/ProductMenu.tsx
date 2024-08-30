@@ -13,7 +13,7 @@ export default function ProductMenu() {
 
     const menuItems = [
         "F5 Distributed Cloud Services",
-        "F5 Cloud Services",
+        "F5 NGINX",
         "F5 BIG-IP",
         "F5 Systems",
     ];
@@ -30,14 +30,14 @@ export default function ProductMenu() {
                 onOpenChange={onOpenChange}
                 scrollBehavior="inside"
                 size="full"
-                className="h-screen" // Ensure the modal takes full viewport height
+                className="desktop:flex laptop:flex mini-laptop:flex hidden"
             >
                 <ModalContent className="p-0 w-[1400px] h-full">
                     {(onClose) => (
                         <ModalBody className="flex flex-row p-0 h-full"> {/* Ensure ModalBody is full height */}
                             <div className="flex-col justify-center items-center bg-sky-800 w-[400px] h-full">
                                 <div className="flex justify-between items-end mt-12 border-b-2 w-full h-12">
-                                    <p className="mb-2 ml-8 font-bold text-2xl text-white">PRODUCTS</p>
+                                    <p className="mb-2 ml-8 font-bold text-2xl text-white">NIGGER</p>
                                     <p className="mr-8 mb-2 text-white cursor-pointer">View all {">"} </p>
                                 </div>
 
@@ -47,7 +47,7 @@ export default function ProductMenu() {
                                     </MenuItem>
                                 ))}
                             </div>
-                            <div className="flex-grow h-full overflow-auto"> {/* Wrapper for content components */}
+                            <div className="flex-grow h-full overflow-auto">
                                 {activeButton === 0 && <F5_Distributed_Cloud_Service />}
                                 {activeButton === 1 && <F5_NGINX />}
                                 {activeButton === 2 && <F5_BIG_IP />}

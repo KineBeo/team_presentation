@@ -1,4 +1,4 @@
-import MenuItemContent from "../MenuItemContent";
+import MenuItemContent, { MenuItemSubContent } from "../MenuItemContent";
 import QuickLinks from "../QuickLinks";
 import { Button } from "@nextui-org/react";
 import { TbHexagonLetterN } from "react-icons/tb";
@@ -64,7 +64,16 @@ export default function F5_NGINX() {
                     <p className="pt-6 pb-8">Modernizes apps at scale with high-performance app delivery spanning monoliths to microservices</p>
                 </div>
                 <div className="flex">
-                    <MenuItemContent title="" items={NGINX_PRODUCTS} />
+                    <div className="flex flex-col">
+                        <MenuItemSubContent title={NGINX_PRODUCTS[0].title} description={NGINX_PRODUCTS[0].description} />
+                        <MenuItemSubContent title={NGINX_PRODUCTS[1].title} description={NGINX_PRODUCTS[1].description} />
+                        <MenuItemSubContent title={NGINX_PRODUCTS[2].title} description={NGINX_PRODUCTS[2].description} />
+                    </div>
+                    <div className="flex flex-col">
+                        <MenuItemSubContent title={NGINX_PRODUCTS[3].title} description={NGINX_PRODUCTS[3].description} />
+                        <MenuItemSubContent title={NGINX_PRODUCTS[4].title} description={NGINX_PRODUCTS[4].description} />
+                        <MenuItemSubContent title={NGINX_PRODUCTS[5].title} description={NGINX_PRODUCTS[5].description} />
+                    </div>
                 </div>
             </div>
             <div className="flex-col w-[350px] h-full">

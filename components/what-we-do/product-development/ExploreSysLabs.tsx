@@ -1,7 +1,7 @@
 import Image from "next/image";
 import react from "react";
 import FeatureSection from "./ReusableFeatureSection";
-const ExploreWebAppAndAPI: React.FC = () => {
+const ExploreSysLabs: React.FC = () => {
   return (
     <div>
       <FeatureSection
@@ -42,4 +42,4 @@ const ExploreWebAppAndAPI: React.FC = () => {
     </div>
   );
 };
-export default ExploreWebAppAndAPI;
+export default ExploreSysLabs;

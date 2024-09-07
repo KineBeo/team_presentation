@@ -12,7 +12,7 @@ const SecurityFeature: React.FC<{
   </div>
 );
 
-const SecurityFeatures: React.FC = () => {
+const Benefits: React.FC = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -35,7 +35,7 @@ const SecurityFeatures: React.FC = () => {
               description="F5 secures your APIs across a complex hybrid and multi-cloud fabric with F5® Distributed Cloud WAAP—reducing risk and complexity while improving operational efficiencies—so you maintain visibility and control across your entire digital ecosystem."
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mobile:hidden">
             <div className="w-64 h-64 relative">
               {/* Replace this with your actual SVG or use an Image component */}
               <div className="absolute inset-0 flex items-center justify-center text-6xl text-blue-500 border-4 border-blue-500 rounded-full">
@@ -54,4 +54,4 @@ const SecurityFeatures: React.FC = () => {
   );
 };
 
-export default SecurityFeatures;
+export default Benefits;

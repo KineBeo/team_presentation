@@ -59,19 +59,19 @@ export default function F5_Systems() {
                 <div className="flex">
                     <div className="flex flex-col">
                         <MenuItemSubContent
-                            title={F5_SYSTEMS[0].title}
-                            description={F5_SYSTEMS[0].description} />
+                            title={F5_SYSTEMS_ITEMS[0].title}
+                            description={F5_SYSTEMS_ITEMS[0].description} />
                         <MenuItemSubContent
-                            title={F5_SYSTEMS[1].title}
-                            description={F5_SYSTEMS[1].description} />
+                            title={F5_SYSTEMS_ITEMS[1].title}
+                            description={F5_SYSTEMS_ITEMS[1].description} />
                     </div>
                     <div className="flex flex-col">
                         <MenuItemSubContent
-                            title={F5_SYSTEMS[2].title}
-                            description={F5_SYSTEMS[2].description} />
+                            title={F5_SYSTEMS_ITEMS[2].title}
+                            description={F5_SYSTEMS_ITEMS[2].description} />
                         <MenuItemSubContent
-                            title={F5_SYSTEMS[3].title}
-                            description={F5_SYSTEMS[3].description} />
+                            title={F5_SYSTEMS_ITEMS[3].title}
+                            description={F5_SYSTEMS_ITEMS[3].description} />
                     </div>
                 </div>
             </div>

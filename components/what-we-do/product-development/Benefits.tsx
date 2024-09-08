@@ -8,7 +8,7 @@ const SecurityFeature: React.FC<{
     <div className="flex items-center mb-2">
       <h3 className="text-xl font-bold">{title}</h3>
     </div>
-    <p className="text-gray-600">{description}</p>
+    <p className=" text-gray-600 ">{description}</p>
   </div>
 );
 

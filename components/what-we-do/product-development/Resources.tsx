@@ -53,20 +53,18 @@ const Resources: React.FC<ResourcesProps> = ({
   solutionOverviews,
 }) => {
   return (
-    <div className="grid mobile:grid-cols-1 tablet:grid-cols-2 gap-8 w-full">
-      {featuredReport && (
-        <div className="w-full">
-          <h2 className="text-2xl font-bold mb-4">Featured</h2>
-          <div className="bg-black text-white p-6 rounded-lg w-full">
-            <div className="w-full h-full bg-purple-600 rounded-lg mb-4"></div>
-            <h3 className="text-xl font-bold mb-2">{featuredReport.title}</h3>
-            <p className="mb-4">{featuredReport.description}</p>
-            <button className="bg-white text-black px-4 py-2 rounded">
-              {featuredReport.buttonText}
-            </button>
-          </div>
+    <div className="grid grid-cols-2 mobile:grid-cols-1 tablet:grid-cols-2 gap-8 w-full">
+      <div className="w-full">
+        <h2 className="text-2xl font-bold mb-4">Featured</h2>
+        <div className="bg-black text-white p-6 rounded-lg w-full">
+          <div className="w-full h-full bg-purple-600 rounded-lg mb-4"></div>
+          <h3 className="text-xl font-bold mb-2">{featuredReport?.title}</h3>
+          <p className="mb-4">{featuredReport?.description}</p>
+          <button className="bg-white text-black px-4 py-2 rounded">
+            {featuredReport?.buttonText}
+          </button>
         </div>
-      )}
+      </div>
       <div className="w-full">
         <ResourceSection title="Assessments" links={assessments} />
         <ResourceSection title="Reports" links={reports} />

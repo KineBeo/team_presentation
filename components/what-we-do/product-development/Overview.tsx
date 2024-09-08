@@ -6,7 +6,7 @@ const Overview: React.FC = () => {
       <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
         Get App Security Without Compromise
       </h2>
-      <p className="mt-4 text-lg text-gray-500">
+      <p className="mt-4 font-medium text-lg text-gray-950 px-10 laptop:px-20 mobile:px-0">
         Attackers follow the money. In a digital economy, this means targeting
         web apps and APIs to exploit vulnerabilities, abuse business logic, and
         bypass access controls—leading to data breach, account takeover, and
@@ -14,7 +14,7 @@ const Overview: React.FC = () => {
         mitigate these attacks, you need comprehensive, consistent security that
         protects your entire digital business—from code to runtime.
       </p>
-      <p className="mt-4 text-lg text-gray-500">
+      <p className="mt-4 font-medium text-lg text-gray-950 px-10 laptop:px-20 mobile:px-0">
         F5 solutions run anywhere and protect apps and APIs everywhere—in the
         data center, across clouds, at the edge, behind your mobile apps, within
         your third- party integrations—continuously defending the digital

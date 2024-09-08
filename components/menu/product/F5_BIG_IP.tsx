@@ -79,6 +79,13 @@ const BIG_IP_VIRTUAL_EDITION = [
     }
 ];
 
+export const F5_BIG_IP_ITEMS = [
+    ...BIG_IP_SECURITY,
+    ...BIG_IP_NEXT,
+    ...BIG_IP_APPLICATION_DELIVERY,
+    ...BIG_IP_VIRTUAL_EDITION
+];
+
 const QUICK_LINKS = [
     {
         title: "Customer Case Studies",
@@ -104,8 +111,6 @@ const QUICK_LINKS = [
 
 
 export default function F5_BIG_IP() {
-
-
 
     return (
         <div className="flex flex-row m-0 mt-12 h-full">

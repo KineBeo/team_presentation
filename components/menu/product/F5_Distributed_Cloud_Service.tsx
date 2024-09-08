@@ -99,6 +99,14 @@ const PLATFORM = [
     }
 ];
 
+export const F5_DISTRIBUTED_CLOUD_SERVICE_ITEMS = [
+    ...WEB_APP_API_PROTECTION,
+    ...FRAUD_AND_RISK,
+    ...MULTI_CLOUD_NETWORKING,
+    ...PERFORMANCE_AND_RELIABILITY,
+    ...PLATFORM
+];
+
 const quickLinks = [
     {
         title: 'Distributed Cloud Services Overview',

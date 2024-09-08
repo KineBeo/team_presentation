@@ -4,7 +4,7 @@ import QuickLinks from "../QuickLinks";
 import { Button } from "@nextui-org/react";
 
 
-const F5_SYSTEMS = [
+export const F5_SYSTEMS_ITEMS = [
     {
         title: "rSeries Appliances",
         description: "A fully automatable architecture, and the highest reliability, security and access control for your critical applications"

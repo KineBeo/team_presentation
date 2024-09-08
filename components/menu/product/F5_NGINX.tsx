@@ -3,7 +3,7 @@ import QuickLinks from "../QuickLinks";
 import { Button } from "@nextui-org/react";
 import { TbHexagonLetterN } from "react-icons/tb";
 
-const NGINX_PRODUCTS = [
+export const F5_NGINX_ITEMS = [
     {
         title: 'NGINX Plus',
         description: 'An all-in-one, cloud-native load balancer, reverse proxy, web server, content cache, and API gateway'
@@ -65,14 +65,14 @@ export default function F5_NGINX() {
                 </div>
                 <div className="flex">
                     <div className="flex flex-col">
-                        <MenuItemSubContent title={NGINX_PRODUCTS[0].title} description={NGINX_PRODUCTS[0].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[1].title} description={NGINX_PRODUCTS[1].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[2].title} description={NGINX_PRODUCTS[2].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[0].title} description={F5_NGINX_ITEMS[0].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[1].title} description={F5_NGINX_ITEMS[1].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[2].title} description={F5_NGINX_ITEMS[2].description} />
                     </div>
                     <div className="flex flex-col">
-                        <MenuItemSubContent title={NGINX_PRODUCTS[3].title} description={NGINX_PRODUCTS[3].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[4].title} description={NGINX_PRODUCTS[4].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[5].title} description={NGINX_PRODUCTS[5].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[3].title} description={F5_NGINX_ITEMS[3].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[4].title} description={F5_NGINX_ITEMS[4].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[5].title} description={F5_NGINX_ITEMS[5].description} />
                     </div>
                 </div>
             </div>

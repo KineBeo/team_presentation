@@ -25,8 +25,9 @@ const Benefits: React.FC<{ data: BenefitProps[] }> = ({ data }) => {
       <div className="max-w-7xl mx-auto">
         <div className="grid mobile:grid-cols-1 tablet:grid-cols-1 grid-cols-2 gap-8">
           <div>
-            {data.map((feature, index) => (
+            {data.map((feature) => (
               <BenifitFeature
+                key={feature.title}
                 title={feature.title}
                 description={feature.description}
               />

@@ -17,7 +17,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   imagePosition = "left",
 }) => {
   const imageContent = (
-    <div className="md:w-1/3 mb-6 md:mb-0">
+    <div className="md:w-full mb-6 md:mb-0">
       <div className="relative w-72 h-72 mx-auto">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="contain" />
       </div>
@@ -41,8 +41,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
       <div
         className={
           imagePosition === "left"
-            ? "order-1"
-            : "order-2 mobile:order-1 tablet:order-1 "
+            ? "order-1 w-full"
+            : "order-2 mobile:order-1 tablet:order-1 w-full"
         }
       >
         {imageContent}
@@ -50,8 +50,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
       <div
         className={
           imagePosition === "left"
-            ? "order-2 mobile:order-2 tablet:order-2"
-            : "order-1 mobile:order-2 tablet:order-2"
+            ? "order-2 mobile:order-2 tablet:order-2 w-full"
+            : "order-1 mobile:order-2 tablet:order-2 w-full"
         }
       >
         {textContent}

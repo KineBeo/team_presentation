@@ -35,10 +35,10 @@ export default function ProductMenu() {
                 <ModalContent className="p-0 w-[1400px] h-full">
                     {(onClose) => (
                         <ModalBody className="flex flex-row p-0 h-full"> {/* Ensure ModalBody is full height */}
-                            <div className="flex-col justify-center items-center bg-sky-800 w-[400px] h-full">
+                            <div className="mini-laptop:w-[300px] flex-col justify-center items-center bg-sky-800 w-[400px] h-full">
                                 <div className="flex justify-between items-end mt-12 border-b-2 w-full h-12">
                                     <p className="mb-2 ml-8 font-bold text-2xl text-white">PRODUCTS</p>
-                                    <p className="mr-8 mb-2 text-white cursor-pointer">View all {">"} </p>
+                                    <p className="mini-laptop:mr-4 mr-8 mb-2 text-white cursor-pointer">View all {">"} </p>
                                 </div>
 
                                 {menuItems.map((item, index) => (

@@ -63,8 +63,8 @@ export default function F5_NGINX() {
                     <h1 className="font-bold text-4xl">F5 NGINX {'>'}</h1>
                     <p className="pt-6 pb-8">Modernizes apps at scale with high-performance app delivery spanning monoliths to microservices</p>
                 </div>
-                <div className="flex">
-                    <div className="flex flex-col">
+                <div className="flex mini-laptop:flex-col">
+                    <div>
                         <MenuItemSubContent title={F5_NGINX_ITEMS[0].title} description={F5_NGINX_ITEMS[0].description} />
                         <MenuItemSubContent title={F5_NGINX_ITEMS[1].title} description={F5_NGINX_ITEMS[1].description} />
                         <MenuItemSubContent title={F5_NGINX_ITEMS[2].title} description={F5_NGINX_ITEMS[2].description} />
@@ -76,7 +76,7 @@ export default function F5_NGINX() {
                     </div>
                 </div>
             </div>
-            <div className="flex-col w-[350px] h-full">
+            <div className="mini-laptop:w-[300px] flex-col w-[350px] h-full">
                 <QuickLinks links={QUICK_LINKS} />
                 <div className="flex flex-col justify-center items-center bg-neutral-900 mt-6 w-72 h-96">
                     <Button className="bg-sky-600 hover:bg-sky-500 w-1/3">See how</Button>

@@ -135,8 +135,8 @@ export default function F5_Distributed_Cloud_Service() {
                     <h1 className="font-bold text-4xl">F5 Distributed Cloud Services {'>'}</h1>
                     <p className="pt-6 pb-8">Leverage a cloud-native environment to simplify app deployment, security, connectivity and operations.</p>
                 </div>
-                <div className="flex">
-                    <div className="mini-laptop:flex desktop:flex-col laptop:flex-col">
+                <div className="flex mini-laptop:flex-col">
+                    <div>
                         <MenuItemContent title="Web App & API Protection" items={WEB_APP_API_PROTECTION} />
                         <MenuItemContent title="Fraud & Risk" items={FRAUD_AND_RISK} />
                         <MenuItemContent title="Multi-Cloud Networking" items={MULTI_CLOUD_NETWORKING} />
@@ -147,7 +147,7 @@ export default function F5_Distributed_Cloud_Service() {
                     </div>
                 </div>
             </div>
-            <div className="flex-col w-[350px] h-full">
+            <div className="mini-laptop:w-[300px] flex-col w-[350px] h-full">
                 <QuickLinks links={quickLinks} />
                 <div className="flex flex-col justify-center items-center bg-neutral-900 mt-6 w-72 h-96">
                     <img src={PowerAndProtectYourAI} alt="Power and Protect Your AI" className="pt-8 size-20" />

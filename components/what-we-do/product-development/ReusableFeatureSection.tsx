@@ -37,18 +37,25 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   );
 
   return (
-    <div className="flex flex-col md:flex-row items-center mb-12">
-      {imagePosition === "left" ? (
-        <>
-          {imageContent}
-          {textContent}
-        </>
-      ) : (
-        <>
-          {textContent}
-          {imageContent}
-        </>
-      )}
+    <div className="flex flex-row mobile:flex-col tablet:flex-col items-center mb-12">
+      <div
+        className={
+          imagePosition === "left"
+            ? "order-1"
+            : "order-2 mobile:order-1 tablet:order-1 "
+        }
+      >
+        {imageContent}
+      </div>
+      <div
+        className={
+          imagePosition === "left"
+            ? "order-2 mobile:order-2 tablet:order-2"
+            : "order-1 mobile:order-2 tablet:order-2"
+        }
+      >
+        {textContent}
+      </div>
     </div>
   );
 };

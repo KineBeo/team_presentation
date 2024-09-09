@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "@nextui-org/react";
 
 const SecurityFeature: React.FC<{
   title: string;
@@ -16,7 +17,7 @@ const Benefits: React.FC = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid mobile:grid-cols-1 tablet:grid-cols-1 grid-cols-2 gap-8">
           <div>
             <SecurityFeature
               title="Continuous Defense"
@@ -36,11 +37,13 @@ const Benefits: React.FC = () => {
             />
           </div>
           <div className="flex items-center justify-center mobile:hidden">
-            <div className="w-64 h-64 relative">
+            <div className="w-full h-full relative">
               {/* Replace this with your actual SVG or use an Image component */}
-              <div className="absolute inset-0 flex items-center justify-center text-6xl text-blue-500 border-4 border-blue-500 rounded-full">
-                icons
-              </div>
+              <Image
+                width="100%"
+                src="/images/what-we-do/product-development/benefit.png"
+                alt="Picture of the author"
+              />
             </div>
           </div>
         </div>

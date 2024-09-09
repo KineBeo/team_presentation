@@ -53,7 +53,7 @@ const Resources: React.FC<ResourcesProps> = ({
   solutionOverviews,
 }) => {
   return (
-    <div className="grid grid-cols-2 mobile:grid-cols-1 tablet:grid-cols-2 gap-8 w-full">
+    <div className="grid grid-cols-2 mobile:grid-cols-1 tablet:grid-cols-1 gap-8 w-full">
       <div className="w-full">
         <h2 className="text-2xl font-bold mb-4">Featured</h2>
         <div className="bg-black text-white p-6 rounded-lg w-full">

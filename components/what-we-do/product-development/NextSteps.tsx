@@ -14,16 +14,16 @@ const Step: React.FC<StepProps> = ({
   description,
   buttonText,
 }) => (
-  <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center w-full">
-    <div className="text-blue-500 mb-2">{icon}</div>
-    <h3 className="text-lg font-semibold mb-1">{title}</h3>
+  <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center w-full ">
+    <div className="text-blue-500 mb-2 h-1/4 ">{icon}</div>
+    <h3 className="text-sm font-semibold mb-1 h-1/4 pt-1">{title}</h3>
     <p
-      className="text-sm text-gray-600 mb-3"
+      className="text-sm text-gray-600 mb-3 h-1/4 pt-2"
       style={{ whiteSpace: "pre-line" }}
     >
       {description}
     </p>
-    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors w-full">
+    <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors w-full h-1/4 mt-4">
       {buttonText}
     </button>
   </div>

@@ -18,16 +18,16 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 }) => {
   const imageContent = (
     <div className="md:w-1/3 mb-6 md:mb-0">
-      <div className="relative w-48 h-48 mx-auto">
+      <div className="relative w-72 h-72 mx-auto">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="contain" />
       </div>
     </div>
   );
 
   const textContent = (
-    <div className="md:w-2/3 md:px-8">
+    <div className="md:w-full md:px-4">
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p className="mb-4 font-normal">{description}</p>
+      <p className="mb-4 font-normal justify-center">{description}</p>
       {learnMoreLink && (
         <a href={learnMoreLink} className="text-blue-600 hover:underline">
           Learn more &gt;

@@ -1,3 +1,4 @@
+import { BenefitProps } from "./Benefits";
 import { ResourcesProps } from "./Resources";
 
 export const resourcesData: ResourcesProps = {
@@ -33,3 +34,23 @@ export const resourcesData: ResourcesProps = {
     { title: "Transform Cloud Log Data into Business Intelligence", href: "#" },
   ],
 };
+
+export const benefitData : BenefitProps[] = [
+  {
+    title:"Continuous Defense",
+    description:"F5 mitigates risk and improves digital resiliency by continuously defending critical business logic behind apps and APIs."
+  },
+   {
+    title:"Consistent Security",
+    description:"F5 dramatically simplifies operations to reduce tool sprawl and complexity by providing end-to-end observability and uniformly protecting the entire digital fabric."
+  },
+   {
+    title:"Confident Innovation",
+    description:"F5 solutions allow customers to grow with confidence by aligning security to digital strategy and removing the burden of manual policy tuning and remediation fire drills that distract your teams from their core mission."
+  },
+   {
+    title:"API Protection",
+    description:"F5 secures your APIs across a complex hybrid and multi-cloud fabric with F5® Distributed Cloud WAAP—reducing risk and complexity while improving operational efficiencies—so you maintain visibility and control across your entire digital ecosystem."
+  }
+  
+]

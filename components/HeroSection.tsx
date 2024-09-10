@@ -25,14 +25,15 @@ export default function HeroSection() {
         desktop:w-1/2 desktop:px-40"
         >
           <h1 className="mobile:text-2xl tablet:text-2xl text-5xl font-bold mb-4">
-            &quot;F5 invented API security.&quot;
+            &quot;CYSLABS TEAM | WE'RE HIRING!.&quot;
           </h1>
           <p className="font-bold mobile:text-lg tablet:text-lg text-3xl mb-6 mt-6">
             -Chris Steffen, EMA
           </p>
-          <p className="mb-6 mobile:text-medium tablet:text-medium text-lg font-semibold">
-            Enterprise Management Associates (EMA) has named F5 as a Visionary
-            in its recently published 2024 Vendor Vision report.
+          <p className="mb-6 mobile:text-medium mobile:text-center tablet:text-medium text-lg font-semibold">
+            CysLabs is a R&D team dedicated to cybersecurity and blockchain. We
+            currently building a dapp enables secure decentralized networks for
+            web3 with share to earn economic.
           </p>
           <Link href="#" className="mobile:hidden">
             <Button

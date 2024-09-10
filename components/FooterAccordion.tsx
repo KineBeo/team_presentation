@@ -17,8 +17,8 @@ const footerSections = [
       'Customer Stories',
       'Webinars',
       'Free Online Courses',
-      'F5 Certification',
-      'LearnF5 Training',
+      'CysLabs Certification',
+      'LearnCysLabs Training',
     ],
   },
   {
@@ -36,7 +36,7 @@ const footerSections = [
     items: [
       'Find a Reseller Partner',
       'Technology Alliances',
-      'Become an F5 Partner',
+      'Become an CysLabs Partner',
       'Login to Partner Central',
     ],
   },
@@ -51,7 +51,7 @@ const footerSections = [
       'Newsroom',
       'Blog',
       'Investor Relations',
-      'F5 NGINX'
+      'CysLabs NGINX'
     ]
   }
 ];

@@ -27,13 +27,13 @@ export default function SupportTab() {
         >
           <ServiceCard
             icon={<VscAccount />}
-            body_text="MyF5"
+            body_text="My Cyslabs"
             footer_text="One place to get support and manage your software subscriptions and BIG-IP VE registration keys."
           />
           <ServiceCard
             icon={<SlPeople />}
             body_text="Partner Central"
-            footer_text="Sales and marketing resources and support for F5 partners."
+            footer_text="Sales and marketing resources and support for CysLabs partners."
           />
         </div>
       </div>

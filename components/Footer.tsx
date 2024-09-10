@@ -24,7 +24,7 @@ export default function Footer() {
               Secure and Deliver Extraordinary Digital Experiences
             </div>
             <div className="text-xl p-4 m-4 font-bold tablet:p-8 mini-laptop:p-10 laptop:p-12 desktop:p-14">
-              F5&apos;s portfolio of automation, security, performance, and
+              CysLabs&apos;s portfolio of automation, security, performance, and
               insight capabilities empowers our customers to create, secure, and
               operate adaptive applications that reduce costs, improve
               operations, and better protect users. <a href="" className="underline">Learn more</a>
@@ -47,7 +47,7 @@ export default function Footer() {
           <div className="m-8 text-sm">
             <div className="mb-4 flex justify-center gap-4">
               <TbBrandMinecraft size={30} />
-              <p>©2024 F5, Inc. All rights reserved.</p>
+              <p>©2024 CysLabs, Inc. All rights reserved.</p>
             </div>
             <div className="space-x-4 flex justify-center font-semibold">
               <a href="#" className="hover:underline">

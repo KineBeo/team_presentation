@@ -24,13 +24,13 @@ export default function ContactTab() {
             icon={<TbSettingsShare />}
             body_text="Start a free trial"
             button_text="Get a free trial"
-            footer_text="Experience F5 in action by testing our products in your pre- production environment."
+            footer_text="Experience Cyslabs in action by testing our products in your pre- production environment."
           />
           <ContactCard
             icon={<MdSupportAgent />}
             body_text="Contact us"
-            button_text="Contact F5"
-            footer_text="We can assess your needs and connect you with the right cloud provider, reseller partner, or F5 sales engineer."
+            button_text="Contact Cyslabs"
+            footer_text="We can assess your needs and connect you with the right cloud provider, reseller partner, or Cyslabs sales engineer."
           />
           <ContactCard
             icon={<PiHandCoinsLight />}

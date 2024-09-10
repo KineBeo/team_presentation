@@ -1,8 +1,7 @@
 import ServiceCard from "./ServiceCard";
 import { GrGroup } from "react-icons/gr";
-import { SiF5 } from "react-icons/si";
 import { SiFlatpak } from "react-icons/si";
-
+import { TbBrandMinecraft } from "react-icons/tb";
 export default function DetailTab() {
   return (
     <div className="">
@@ -26,8 +25,8 @@ export default function DetailTab() {
         grid grid-cols-1 mini-laptop:grid-cols-3 laptop:grid-cols-3 desktop:grid-cols-3"
         >
           <ServiceCard
-            icon={<SiF5 />}
-            body_text="F5 Labs"
+            icon={<TbBrandMinecraft />}
+            body_text="CysLabs"
             footer_text="Get the who, what, when, and what&apos;s next in cyberattacks to inform your security."
           />
           <ServiceCard
@@ -45,29 +44,3 @@ export default function DetailTab() {
     </div>
   );
 }
-// screens: {
-//     mobile: {
-//       min: "100px",
-//       max: "550px",
-//     },
-//     tablet: {
-//       min: "550px",
-//       max: "750px",
-//     },
-//     "mini-laptop": {
-//       min: "750px",
-//       max: "874px",
-//     },
-//     laptop: {
-//       min: "874px",
-//       max: "1280px",
-//     },
-//     desktop: {
-//       min: "1280px",
-//     },
-//     'sm': '640px',
-//     'md': '768px',
-//     'lg': '1024px',
-//     'xl': '1280px',
-//     '2xl': '1536px',
-//   },

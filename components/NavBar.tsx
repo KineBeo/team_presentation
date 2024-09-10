@@ -12,7 +12,6 @@ import {
   Button,
   Input,
 } from "@nextui-org/react";
-import { FiSearch } from "react-icons/fi";
 import { TbBrandMinecraft } from "react-icons/tb";
 import SolutionMenu from "./menu/solution/SolutionMenu";
 import SolutionMenuMobile from "./menu/solution/SolutionMenuMobile";
@@ -43,7 +42,7 @@ export default function NavBar() {
         />
         <NavbarBrand className="gap-4">
           <TbBrandMinecraft size={30} />
-          <p className="font-bold text-2xl">5LABS</p>
+          <p className="font-bold text-2xl">CYSLABS</p>
         </NavbarBrand>
       </NavbarContent>
 

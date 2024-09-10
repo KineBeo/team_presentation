@@ -39,33 +39,33 @@ export default function App() {
               <Link href="what-we-do/product-development">
                 <ServiceCard
                   icon={<IoLogoAppleAr />}
-                  body_text="Web Application and API Protection"
+                  body_text="Blockchain/ Security product Development"
                   footer_text="Reduce risk and complexity so you can continue moving your business forward."
                 />
               </Link>
               <ServiceCard
                 icon={<IoCloudDoneOutline />}
-                body_text="Secure Multicloud Networking"
+                body_text="Blockchain Security audit"
                 footer_text="Connect, secure, and manage apps and APIs across distributed multicloud and hybrid networks."
               />
               <ServiceCard
                 icon={<GrDocumentPerformance />}
-                body_text="Application and Network Performance"
+                body_text="Cyber Security Research"
                 footer_text="Increase availability and performance of your apps to optimize user experience"
               />
               <ServiceCard
                 icon={<GoShieldCheck />}
-                body_text="Modern Application Delivery"
+                body_text="Threat Intelligence & Threat Hunting"
                 footer_text="Meet customer demands and improve digital experiences."
               />
               <ServiceCard
                 icon={<MdOutlineFingerprint />}
-                body_text="Fraud and Abuse Prevention"
+                body_text="Incident Response & Forensics"
                 footer_text="Protect against fraud while keeping apps available for legitimate users."
               />
               <ServiceCard
                 icon={<MdSecurity />}
-                body_text="Zero Trust Security"
+                body_text="Malware Analysis"
                 footer_text="Prevent unauthorized access to your networks, applications, and APIs"
               />
             </div>

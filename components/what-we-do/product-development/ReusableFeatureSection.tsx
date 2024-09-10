@@ -17,7 +17,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   imagePosition = "left",
 }) => {
   const imageContent = (
-    <div className="md:w-full mb-6 md:mb-0">
+    <div className="w-full mb-6 ">
       <div className="relative w-72 h-72 mx-auto">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="contain" />
       </div>
@@ -25,7 +25,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   );
 
   const textContent = (
-    <div className="md:w-full md:px-4">
+    <div className="w-full px-4">
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
       <p className="mb-4 font-normal justify-center">{description}</p>
       {learnMoreLink && (

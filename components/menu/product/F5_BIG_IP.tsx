@@ -79,6 +79,13 @@ const BIG_IP_VIRTUAL_EDITION = [
     }
 ];
 
+export const F5_BIG_IP_ITEMS = [
+    ...BIG_IP_SECURITY,
+    ...BIG_IP_NEXT,
+    ...BIG_IP_APPLICATION_DELIVERY,
+    ...BIG_IP_VIRTUAL_EDITION
+];
+
 const QUICK_LINKS = [
     {
         title: "Customer Case Studies",
@@ -105,8 +112,6 @@ const QUICK_LINKS = [
 
 export default function F5_BIG_IP() {
 
-
-
     return (
         <div className="flex flex-row m-0 mt-12 h-full">
             <div className="flex-col px-12 w-[600px]">
@@ -115,18 +120,18 @@ export default function F5_BIG_IP() {
                     <h1 className="font-bold text-4xl">F5 NGINX {'>'}</h1>
                     <p className="pt-6 pb-8">Modernizes apps at scale with high-performance app delivery spanning monoliths to microservices</p>
                 </div>
-                <div className="flex">
-                    <div className="flex flex-col">
+                <div className="flex mini-laptop:flex-col">
+                    <div>
                         <MenuItemContent title="BIG-IP Security" items={BIG_IP_SECURITY} />
                         <MenuItemContent title="BIP-IP Next" items={BIG_IP_NEXT} />
                     </div>
-                    <div className="flex flex-col">
+                    <div>
                         <MenuItemContent title="BIG-IP Application Delivery" items={BIG_IP_APPLICATION_DELIVERY} />
                         <MenuItemContent title="BIG-IP Virtual Edition" items={BIG_IP_VIRTUAL_EDITION} />
                     </div>
                 </div>
             </div>
-            <div className="flex-col w-[350px] h-full">
+            <div className="mini-laptop:w-[300px] flex-col w-[350px] h-full">
                 <QuickLinks links={QUICK_LINKS} />
                 <div className="flex flex-col justify-center items-center bg-neutral-900 mt-6 w-72 h-96">
                     <Button className="bg-sky-600 hover:bg-sky-500 w-1/3">See how</Button>

@@ -3,7 +3,7 @@ import QuickLinks from "../QuickLinks";
 import { Button } from "@nextui-org/react";
 import { TbHexagonLetterN } from "react-icons/tb";
 
-const NGINX_PRODUCTS = [
+export const F5_NGINX_ITEMS = [
     {
         title: 'NGINX Plus',
         description: 'An all-in-one, cloud-native load balancer, reverse proxy, web server, content cache, and API gateway'
@@ -63,20 +63,20 @@ export default function F5_NGINX() {
                     <h1 className="font-bold text-4xl">F5 NGINX {'>'}</h1>
                     <p className="pt-6 pb-8">Modernizes apps at scale with high-performance app delivery spanning monoliths to microservices</p>
                 </div>
-                <div className="flex">
-                    <div className="flex flex-col">
-                        <MenuItemSubContent title={NGINX_PRODUCTS[0].title} description={NGINX_PRODUCTS[0].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[1].title} description={NGINX_PRODUCTS[1].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[2].title} description={NGINX_PRODUCTS[2].description} />
+                <div className="flex mini-laptop:flex-col">
+                    <div>
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[0].title} description={F5_NGINX_ITEMS[0].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[1].title} description={F5_NGINX_ITEMS[1].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[2].title} description={F5_NGINX_ITEMS[2].description} />
                     </div>
                     <div className="flex flex-col">
-                        <MenuItemSubContent title={NGINX_PRODUCTS[3].title} description={NGINX_PRODUCTS[3].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[4].title} description={NGINX_PRODUCTS[4].description} />
-                        <MenuItemSubContent title={NGINX_PRODUCTS[5].title} description={NGINX_PRODUCTS[5].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[3].title} description={F5_NGINX_ITEMS[3].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[4].title} description={F5_NGINX_ITEMS[4].description} />
+                        <MenuItemSubContent title={F5_NGINX_ITEMS[5].title} description={F5_NGINX_ITEMS[5].description} />
                     </div>
                 </div>
             </div>
-            <div className="flex-col w-[350px] h-full">
+            <div className="mini-laptop:w-[300px] flex-col w-[350px] h-full">
                 <QuickLinks links={QUICK_LINKS} />
                 <div className="flex flex-col justify-center items-center bg-neutral-900 mt-6 w-72 h-96">
                     <Button className="bg-sky-600 hover:bg-sky-500 w-1/3">See how</Button>

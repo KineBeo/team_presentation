@@ -25,7 +25,7 @@ export default function HeroSection() {
         desktop:w-1/2 desktop:px-40"
         >
           <h1 className="mobile:text-2xl tablet:text-2xl text-5xl font-bold mb-4">
-            &quot;CYSLABS TEAM | WE'RE HIRING!.&quot;
+            &quot;CYSLABS TEAM | WE&apos;RE HIRING!.&quot;
           </h1>
           <p className="font-bold mobile:text-lg tablet:text-lg text-3xl mb-6 mt-6">
             -Chris Steffen, EMA

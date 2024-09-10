@@ -164,7 +164,7 @@ export default function SolutionMenu() {
 
   return (
     <div>
-      <Label onClick={onOpen} className="font-bold text-base ">
+      <Label onClick={onOpen} className="font-bold text-base cursor-pointer">
         SOLUTIONS
       </Label>
       <Modal

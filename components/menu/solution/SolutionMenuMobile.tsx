@@ -74,7 +74,7 @@ const SolutionMenuMobile = () => {
   };
   return (
     <div>
-      <Label onClick={onOpen} className="font-bold text-base ">
+      <Label onClick={onOpen} className="text-base ">
         SOLUTIONS
       </Label>
       <Modal

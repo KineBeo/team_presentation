@@ -21,7 +21,6 @@ import ProductMenuMobile from "./menu/product/ProductMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [navBarState, setNavBarState] = React.useState('menu');
 
   const menuItems = [
     "Solutions",
@@ -51,7 +50,6 @@ export default function NavBar() {
       <NavbarContent
         className="
       hidden 
-      mini-laptop:flex
       laptop:flex
       desktop:flex
       gap-4 
@@ -94,25 +92,6 @@ export default function NavBar() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent
-        as="div"
-        className="items-center mobile:hidden tablet:hidden"
-        justify="end"
-      >
-        <Input
-          classNames={{
-            base: "w-3/4 h-10",
-            mainWrapper: "h-full",
-            input: "text-small",
-            inputWrapper:
-              "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
-          }}
-          placeholder="Type to search..."
-          size="sm"
-          startContent={<FiSearch size={30} />}
-          type="search"
-        />
-      </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
@@ -128,9 +107,12 @@ export default function NavBar() {
               href="#"
               size="lg"
             >
-              {index === 1 ? <ProductMenuMobile /> : item}
+              {index === 0 ? <SolutionMenuMobile /> : <> </>}
+              {index === 1 ? <ProductMenuMobile /> : <></>}
+              {/* Hoang Xuan Truong focus on this place, just place Menu like I did */}
+              {index !== 0 && index !== 1 ? item : <></>}
+              {/* {item} */}
             </Link>
-            {index === 0 ? <SolutionMenuMobile /> : <> </>}
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

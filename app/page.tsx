@@ -7,12 +7,9 @@ import TopicTab from "@/components/TopicTab";
 import DetailTab from "@/components/DetailTab";
 import SupportTab from "@/components/SupportTab";
 import ContactTab from "@/components/ContactTab";
-import Footer from "@/components/Footer";
-import FooterAccordion from "@/components/FooterAccordion";
 export default function Home() {
   return (
-      <>
-        <NavBar/>
+      <> 
         <HeroSection/>
         <SericeTab/>
         <BlogTab/>
@@ -20,13 +17,6 @@ export default function Home() {
         <DetailTab/>
         <SupportTab/>
         <ContactTab/>
-        <Footer/>
-        {/* Presentation
-        Service 
-        Blog 
-        Topic 
-        Contact
-        Footer  */}
       </>
   );
 }

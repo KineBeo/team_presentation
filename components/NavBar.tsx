@@ -19,6 +19,7 @@ import ProductMenu from "./menu/product/ProductMenu";
 import ProductMenuMobile from "./menu/product/ProductMenuMobile";
 import PartnerMenu from "./menu/partner/PartnerMenu";
 import PartnerMenuMobile from "./menu/partner/PartnerMenuMobile";
+import ResourcesMenu from "./menu/resources/ResourcesMenu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -69,7 +70,7 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            RESOURCES
+            <ResourcesMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>

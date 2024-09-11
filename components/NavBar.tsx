@@ -21,6 +21,7 @@ import PartnerMenu from "./menu/partner/PartnerMenu";
 import PartnerMenuMobile from "./menu/partner/PartnerMenuMobile";
 import ResourcesMenu from "./menu/resources/ResourcesMenu";
 import ResourcesMenuMobile from "./menu/resources/ResourcesMenuMobile";
+import SupportMenu from "./menu/support/SupportMenu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -76,7 +77,7 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            SUPPORT
+            <SupportMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>

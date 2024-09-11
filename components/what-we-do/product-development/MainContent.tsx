@@ -1,11 +1,12 @@
 import React from "react";
 import Benefits from "./Benefits";
-import ExploreSysLabs from "./ExploreSysLabs";
+import ExploreCysLabs from "./ExploreCysLabs";
 import Overview from "./Overview";
 import Resources from "./Resources";
 import HeroSection from "@/components/HeroSection";
-import { resourcesData } from "./Data";
+import { exploreCysLabsData, overviewData, stepData } from "./Data";
 import { benefitData } from "./Data";
+import { resourcesData } from "./Data";
 import NextSteps from "./NextSteps";
 
 function ProductDevelopment() {
@@ -13,11 +14,11 @@ function ProductDevelopment() {
     <section>
       <HeroSection />
       <div className="px-40 mobile:px-10 pt-20 mobile:pt-10">
-        <Overview />
+        <Overview data={overviewData} />
         <Benefits data={benefitData} />
-        <ExploreSysLabs />
+        <ExploreCysLabs data={exploreCysLabsData} />
         <Resources {...resourcesData} />
-        <NextSteps />
+        <NextSteps data={stepData} />
       </div>
     </section>
   );

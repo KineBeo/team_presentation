@@ -17,6 +17,8 @@ import SolutionMenu from "./menu/solution/SolutionMenu";
 import SolutionMenuMobile from "./menu/solution/SolutionMenuMobile";
 import ProductMenu from "./menu/product/ProductMenu";
 import ProductMenuMobile from "./menu/product/ProductMenuMobile";
+import PartnerMenu from "./menu/partner/PartnerMenu";
+import PartnerMenuMobile from "./menu/partner/PartnerMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -47,12 +49,7 @@ export default function NavBar() {
       </NavbarContent>
 
       <NavbarContent
-        className="
-      hidden 
-      laptop:flex
-      desktop:flex
-      gap-4 
-      font-bold mx-4"
+        className="desktop:flex laptop:flex gap-4 hidden mx-4 font-bold"
         justify="center"
       >
         <NavbarItem>
@@ -67,7 +64,7 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            PARTNERS
+            <PartnerMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -99,8 +96,8 @@ export default function NavBar() {
                 index === 2
                   ? "primary"
                   : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
+                    ? "danger"
+                    : "foreground"
               }
               className="w-full"
               href="#"
@@ -108,8 +105,9 @@ export default function NavBar() {
             >
               {index === 0 ? <SolutionMenuMobile /> : <> </>}
               {index === 1 ? <ProductMenuMobile /> : <></>}
+              {index === 2 ? <PartnerMenuMobile /> : <></>}
               {/* Hoang Xuan Truong focus on this place, just place Menu like I did */}
-              {index !== 0 && index !== 1 ? item : <></>}
+              {index !== 0 && index !== 1 && index !== 2 ? item : <></>}
               {/* {item} */}
             </Link>
           </NavbarMenuItem>

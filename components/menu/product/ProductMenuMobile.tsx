@@ -28,8 +28,8 @@ export default function MenuItemContent() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalBody className="p-0 h-screen overflow-auto">
-                <div className="flex justify-center items-center border-slate-100 border-b-1 w-full h-10">
+              <ModalBody className="p-0 overflow-auto">
+                <div className="flex justify-center items-center border-slate-100 border-b-1 w-full min-h-10">
                   <h1 className="font-bold text-xl">PRODUCTS</h1>
                 </div>
                 <div className="flex justify-start items-center border-slate-100 border-b-1 w-full h-10">

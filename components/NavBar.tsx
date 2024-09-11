@@ -20,6 +20,7 @@ import ProductMenuMobile from "./menu/product/ProductMenuMobile";
 import PartnerMenu from "./menu/partner/PartnerMenu";
 import PartnerMenuMobile from "./menu/partner/PartnerMenuMobile";
 import ResourcesMenu from "./menu/resources/ResourcesMenu";
+import ResourcesMenuMobile from "./menu/resources/ResourcesMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -107,8 +108,9 @@ export default function NavBar() {
               {index === 0 ? <SolutionMenuMobile /> : <> </>}
               {index === 1 ? <ProductMenuMobile /> : <></>}
               {index === 2 ? <PartnerMenuMobile /> : <></>}
+              {index === 3 ? <ResourcesMenuMobile /> : <></>}
               {/* Hoang Xuan Truong focus on this place, just place Menu like I did */}
-              {index !== 0 && index !== 1 && index !== 2 ? item : <></>}
+              {index !== 0 && index !== 1 && index !== 2 && index !== 3 ? item : <></>}
               {/* {item} */}
             </Link>
           </NavbarMenuItem>

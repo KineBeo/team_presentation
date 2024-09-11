@@ -3,25 +3,30 @@ import QuickLinks from "../QuickLinks";
 import { GoLightBulb } from "react-icons/go";
 import MenuItemContent, { MenuItemSubContent } from "../MenuItemContent";
 
+const FIRST_COLUMN = [
+    { title: "Professional Certification", description: "Career-advancing technical skills for F5 products and solutions" },
+    { title: "Training", description: "Live virtual and on-site training, and F5 Digital Education to help you get the most from your F5 investment" }
+];
+
+const SECOND_COLUMN = [
+    { title: "Webinars", description: "Scheduled and on-demand F5 webinars covering a range of topics" }
+];
+
+export const EDUCATION_ALL_ITEMS = [
+    ...FIRST_COLUMN,
+    ...SECOND_COLUMN
+];
+
+const QUICK_LINKS = [
+    { title: "Events", url: "#" },
+    { title: "Blog", url: "#" },
+    { title: "Glossary", url: "#" },
+    { title: "LearnF5", url: "#" },
+    { title: "White Papers", url: "#" }
+];
 
 export default function Education() {
 
-    const FIRST_COLUMN = [
-        { title: "Professional Certification", description: "Career-advancing technical skills for F5 products and solutions" },
-        { title: "Training", description: "Live virtual and on-site training, and F5 Digital Education to help you get the most from your F5 investment" }
-    ];
-
-    const SECOND_COLUMN = [
-        { title: "Webinars", description: "Scheduled and on-demand F5 webinars covering a range of topics" }
-    ];
-
-    const QUICK_LINKS = [
-        { title: "Events", url: "#" },
-        { title: "Blog", url: "#" },
-        { title: "Glossary", url: "#" },
-        { title: "LearnF5", url: "#" },
-        { title: "White Papers", url: "#" }
-    ];
 
     return (
         <div className="flex flex-row m-0 mt-12 h-auto">

@@ -3,39 +3,43 @@ import MenuItemContent, { MenuItemSubContent } from "../MenuItemContent";
 import QuickLinks from "../QuickLinks";
 import { Button } from "@nextui-org/react";
 
+const FIRST_COLUMN = [
+    { title: "API Documentation", description: "Documentation on programmable APIs for F5's BIG-IP product" },
+    { title: "Articles", description: "Dive more deeply into trends, solutions, and light technical details." },
+    { title: "Integration Guides", description: "Expert advice on deploying F5 solutions with partner technologies" },
+    { title: "Demo Center", description: "On-demand demonstrations for F5 product consoles and administration user experiences." },
+    { title: "Deployment Guides", description: "Step-by-step configuration procedures for deploying F5 products" },
+    { title: "Glossary", description: "Definitions of common terms used in relation to F5 technology" },
+    { title: "Infographics", description: "Visual stories about F5 products, services, and industry trends" },
+    { title: "KB Articles", description: "Articles for self-service help on F5 products and services" },
+    { title: "Product Certifications", description: "Information on BIG-IP's compliance with Federal Information Processing Standards" }
+];
+
+const SECOND_COLUMN = [
+    { title: "Product Datasheets", description: "Features, specs, system requirements, and more on F5 products and services" },
+    { title: "Product Documentation", description: "Announcements, release notes, and product guides for F5 products" },
+    { title: "Reference Architecture", description: "How F5 products interact with different tools and partner solutions" },
+    { title: "Reports", description: "Get the latest F5 thought leadership, exploring current and emerging technology trends" },
+    { title: "Solution Profiles", description: "Information on how F5 addresses specific technical issues" },
+    { title: "Visio Stencils", description: "Build Visio diagrams to show integration of F5 products into your infrastructure" },
+    { title: "Webinars", description: "Explore best practices and solutions for application services, cloud, and security." },
+    { title: "White Papers", description: "In-depth documentation that provides real-world context for F5 technologies" }
+];
+
+export const DOCUMENTATION_ALL_ITEMS = [
+    ...FIRST_COLUMN,
+    ...SECOND_COLUMN
+];
+
+const QUICK_LINKS = [
+    { title: "Blog", url: "#" },
+    { title: "Customer Case Studies", url: "#" },
+    { title: "DevCentral", url: "#" },
+    { title: "Software Downloads", url: "#" },
+    { title: "Support Portal", url: "#" }
+];
+
 export default function Documentation() {
-
-    const FIRST_COLUMN = [
-        { title: "API Documentation", description: "Documentation on programmable APIs for F5's BIG-IP product" },
-        { title: "Articles", description: "Dive more deeply into trends, solutions, and light technical details." },
-        { title: "Integration Guides", description: "Expert advice on deploying F5 solutions with partner technologies" },
-        { title: "Demo Center", description: "On-demand demonstrations for F5 product consoles and administration user experiences." },
-        { title: "Deployment Guides", description: "Step-by-step configuration procedures for deploying F5 products" },
-        { title: "Glossary", description: "Definitions of common terms used in relation to F5 technology" },
-        { title: "Infographics", description: "Visual stories about F5 products, services, and industry trends" },
-        { title: "KB Articles", description: "Articles for self-service help on F5 products and services" },
-        { title: "Product Certifications", description: "Information on BIG-IP's compliance with Federal Information Processing Standards" }
-    ];
-
-    const SECOND_COLUMN = [
-        { title: "Product Datasheets", description: "Features, specs, system requirements, and more on F5 products and services" },
-        { title: "Product Documentation", description: "Announcements, release notes, and product guides for F5 products" },
-        { title: "Reference Architecture", description: "How F5 products interact with different tools and partner solutions" },
-        { title: "Reports", description: "Get the latest F5 thought leadership, exploring current and emerging technology trends" },
-        { title: "Solution Profiles", description: "Information on how F5 addresses specific technical issues" },
-        { title: "Visio Stencils", description: "Build Visio diagrams to show integration of F5 products into your infrastructure" },
-        { title: "Webinars", description: "Explore best practices and solutions for application services, cloud, and security." },
-        { title: "White Papers", description: "In-depth documentation that provides real-world context for F5 technologies" }
-    ]
-
-    const QUICK_LINKS = [
-        { title: "Blog", url: "#" },
-        { title: "Customer Case Studies", url: "#" },
-        { title: "DevCentral", url: "#" },
-        { title: "Software Downloads", url: "#" },
-        { title: "Support Portal", url: "#" }
-    ];
-
 
     return (
         <div className="flex flex-row m-0 mt-12 h-auto">

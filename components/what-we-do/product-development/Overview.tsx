@@ -10,8 +10,11 @@ const Overview: React.FC<{ data: OverViewProps }> = ({ data }) => {
       <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
         {data.title}
       </h2>
-      {data.description.map((element) => (
-        <p className="mt-4 font-medium text-lg text-gray-950 px-10 laptop:px-20 mobile:px-0">
+      {data.description.map((element, index) => (
+        <p
+          key={index}
+          className="mt-4 font-medium text-lg text-gray-950 px-10 laptop:px-20 mobile:px-0"
+        >
           {element}
         </p>
       ))}

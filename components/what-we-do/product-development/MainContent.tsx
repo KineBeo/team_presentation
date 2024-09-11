@@ -18,7 +18,7 @@ function ProductDevelopment() {
         <Benefits data={benefitData} />
         <ExploreCysLabs data={exploreCysLabsData} />
         <Resources {...resourcesData} />
-        <NextSteps data={stepData} />
+        <NextSteps />
       </div>
     </section>
   );

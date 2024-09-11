@@ -8,7 +8,7 @@ import { resourcesData } from "./Data";
 import { benefitData } from "./Data";
 import NextSteps from "./NextSteps";
 
-function ProductDevelopment() {
+function BLockchainSecurity() {
   return (
     <section>
       <HeroSection />
@@ -23,4 +23,4 @@ function ProductDevelopment() {
   );
 }
 
-export default ProductDevelopment;
+export default BLockchainSecurity;

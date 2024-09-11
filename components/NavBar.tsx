@@ -23,6 +23,8 @@ import ResourcesMenu from "./menu/resources/ResourcesMenu";
 import ResourcesMenuMobile from "./menu/resources/ResourcesMenuMobile";
 import SupportMenu from "./menu/support/SupportMenu";
 import SupportMenuMobile from "./menu/support/SupportMenuMobile";
+import CompanyMenu from "./menu/company/CompanyMenu";
+import Get5LABS from "./menu/get-5labs/Get5labsMenu";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -83,12 +85,12 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            COMPANY
+            <CompanyMenu />
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            GET 5LABS
+            <Get5LABS />
           </Link>
         </NavbarItem>
       </NavbarContent>

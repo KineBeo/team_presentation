@@ -19,7 +19,7 @@ export default function MenuItem({ children, onClick, isClicked }: MenuItemProps
                 </button>
             ) : (
                 <button className="flex items-center bg-sky-800 w-full h-12 text-white hover:underline cursor-pointer" onClick={() => { onClick() }}>
-                    <p className="ml-8 w-[300px] h-8 text-left text-white group-hover:underline">
+                    <p className="mt-2 ml-8 w-[300px] h-8 text-left text-white group-hover:underline">
                         {children}
                     </p>
                     <IoIosArrowForward className="text-2xl text-white" />

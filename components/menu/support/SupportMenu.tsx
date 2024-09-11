@@ -7,41 +7,52 @@ import { GiAchievement } from "react-icons/gi";
 import MenuItemContent, { MenuItemSubContent } from "../MenuItemContent";
 import { BiSupport } from "react-icons/bi";
 
+
+
+const BIP_IP_SYSTEMS = {
+    title: "BIG-IP Systems",
+    items: [
+        { title: "Support Portal", description: "Find self-service support on a variety of topics." },
+        { title: "Professional Services", description: "Get professional help architecting, implementing, and maintaining F5 solutions." },
+        { title: "Activate Registration Keys", description: "Activate registration keys for your F5 products." },
+        { title: "Bug Tracker", description: "Find helpful information on known issues and how to fix them." },
+        { title: "Create a Service Request", description: "Create a service request to get support with your F5 products." },
+        { title: "Software Downloads", description: "Download software, patches, and other files for your F5 products." }
+    ]
+};
+
+
+const NGINX = {
+    title: "NGINX",
+    items: [
+        { title: "Commercial Software Updates", description: "Find product releases for NGINX Commercial products." },
+        { title: "Commercial Product Documentation", description: "Find product documentation for NGINX Commercial products." },
+        { title: "Open Source Product Updates and Documentation", description: "Find product releases and documentation for NGINX Open Source products." }
+    ]
+};
+
+const DISTRIBUTED_CLOUD_SERVICES = {
+    title: "Distributed Cloud Services",
+    items: [
+        { title: "Documentation", description: "The official documentation repository for F5 Distributed Cloud." },
+        { title: "Quick Start", description: "View guides providing common instructions for Distributed Cloud products and use cases." },
+        { title: "System Status", description: "View the status of all our products/services, customer dashboard, APIs, and our global network PoPs." },
+        { title: "Feature Requests", description: "Connect with the F5 Distributed Cloud team to request new features or suggest modifications to existing features." },
+        { title: "Compliance", description: "F5 adheres to industry standard compliance certifications and security regulations to earn our customers’ trust. View our compliances here." }
+    ]
+};
+
+const SUPPORT_ALL_ITEMS = [
+    ...BIP_IP_SYSTEMS.items,
+    ...NGINX.items,
+    ...DISTRIBUTED_CLOUD_SERVICES.items
+];
+
+export { SUPPORT_ALL_ITEMS };
+
 export default function SupportMenu() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-    const BIP_IP_SYSTEMS = {
-        title: "BIG-IP Systems",
-        items: [
-            { title: "Support Portal", description: "Find self-service support on a variety of topics." },
-            { title: "Professional Services", description: "Get professional help architecting, implementing, and maintaining F5 solutions." },
-            { title: "Activate Registration Keys", description: "Activate registration keys for your F5 products." },
-            { title: "Bug Tracker", description: "Find helpful information on known issues and how to fix them." },
-            { title: "Create a Service Request", description: "Create a service request to get support with your F5 products." },
-            { title: "Software Downloads", description: "Download software, patches, and other files for your F5 products." }
-        ]
-    };
-
-
-    const NGINX = {
-        title: "NGINX",
-        items: [
-            { title: "Commercial Software Updates", description: "Find product releases for NGINX Commercial products." },
-            { title: "Commercial Product Documentation", description: "Find product documentation for NGINX Commercial products." },
-            { title: "Open Source Product Updates and Documentation", description: "Find product releases and documentation for NGINX Open Source products." }
-        ]
-    };
-
-    const DISTRIBUTED_CLOUD_SERVICES = {
-        title: "Distributed Cloud Services",
-        items: [
-            { title: "Documentation", description: "The official documentation repository for F5 Distributed Cloud." },
-            { title: "Quick Start", description: "View guides providing common instructions for Distributed Cloud products and use cases." },
-            { title: "System Status", description: "View the status of all our products/services, customer dashboard, APIs, and our global network PoPs." },
-            { title: "Feature Requests", description: "Connect with the F5 Distributed Cloud team to request new features or suggest modifications to existing features." },
-            { title: "Compliance", description: "F5 adheres to industry standard compliance certifications and security regulations to earn our customers’ trust. View our compliances here." }
-        ]
-    };
 
     const quickLinks = [
         {

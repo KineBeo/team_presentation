@@ -15,14 +15,9 @@ import { F5_SYSTEMS_ITEMS } from "./F5_Systems";
 export default function MenuItemContent() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
-  function handleButtonClick() {
-    console.log("Product clicked");
-    onOpen();
-  }
-
   return (
     <div>
-      <div onClick={handleButtonClick}>Products</div>
+      <div onClick={onOpen}>Products</div>
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}

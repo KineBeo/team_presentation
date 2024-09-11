@@ -50,7 +50,7 @@ const SUPPORT_ALL_ITEMS = [
 
 export { SUPPORT_ALL_ITEMS };
 
-export default function Get5LABS() {
+export default function GetInformationMenu() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
 
@@ -78,7 +78,7 @@ export default function Get5LABS() {
 
     return (
         <div>
-            <Label onClick={onOpen} className="font-bold text-base cursor-pointer">GET 5LABS</Label>
+            <Label onClick={onOpen} className="font-bold text-base cursor-pointer">GET CYSLABS</Label>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
@@ -92,9 +92,8 @@ export default function Get5LABS() {
                             <div className="flex flex-col p-12 w-full">
                                 <div>
                                     <BiSupport className="text-9xl" />
-                                    <h1 className="mt-8 font-bold text-xl">Get CYSLABS {'>'}</h1>
-                                    <p>Flexible deployment and management options to fit your needs. Purchase, license, subscribe, or try F5 in your environment.
-                                    </p>
+                                    <h1 className="mt-8 font-bold text-xl">F5 Global Support {'>'}</h1>
+                                    <p>Get hands-on help with using and managing F5 products and services.</p>
                                 </div>
                                 <div className="flex flex-row">
                                     <div className="w-1/2">

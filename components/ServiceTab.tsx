@@ -43,11 +43,13 @@ export default function App() {
                   footer_text="Reduce risk and complexity so you can continue moving your business forward."
                 />
               </Link>
-              <ServiceCard
-                icon={<IoCloudDoneOutline />}
-                body_text="Blockchain Security audit"
-                footer_text="Connect, secure, and manage apps and APIs across distributed multicloud and hybrid networks."
-              />
+              <Link href="what-we-do/blockchain-sercurity">
+                <ServiceCard
+                  icon={<IoCloudDoneOutline />}
+                  body_text="Blockchain Security audit"
+                  footer_text="Connect, secure, and manage apps and APIs across distributed multicloud and hybrid networks."
+                />
+              </Link>
               <ServiceCard
                 icon={<GrDocumentPerformance />}
                 body_text="Cyber Security Research"

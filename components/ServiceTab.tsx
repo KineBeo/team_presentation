@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Tabs, Tab, Card, CardBody, Switch, Link } from "@nextui-org/react";
+import { Tabs, Tab, Card, CardBody, Switch } from "@nextui-org/react";
 import ServiceCard from "./ServiceCard";
 import { IoLogoAppleAr } from "react-icons/io5";
 import { IoCloudDoneOutline } from "react-icons/io5";
@@ -12,6 +12,7 @@ import { BsBank } from "react-icons/bs";
 import { TfiWorld } from "react-icons/tfi";
 import { PiHeartbeat } from "react-icons/pi";
 import { BsCart4 } from "react-icons/bs";
+import Link from "next/link";
 
 export default function App() {
   return (
@@ -50,26 +51,34 @@ export default function App() {
                   footer_text="Connect, secure, and manage apps and APIs across distributed multicloud and hybrid networks."
                 />
               </Link>
-              <ServiceCard
-                icon={<GrDocumentPerformance />}
-                body_text="Cyber Security Research"
-                footer_text="Increase availability and performance of your apps to optimize user experience"
-              />
-              <ServiceCard
-                icon={<GoShieldCheck />}
-                body_text="Threat Intelligence & Threat Hunting"
-                footer_text="Meet customer demands and improve digital experiences."
-              />
-              <ServiceCard
-                icon={<MdOutlineFingerprint />}
-                body_text="Incident Response & Forensics"
-                footer_text="Protect against fraud while keeping apps available for legitimate users."
-              />
-              <ServiceCard
-                icon={<MdSecurity />}
-                body_text="Malware Analysis"
-                footer_text="Prevent unauthorized access to your networks, applications, and APIs"
-              />
+              <Link href="what-we-do/blockchain-sercurity">
+                <ServiceCard
+                  icon={<GrDocumentPerformance />}
+                  body_text="Cyber Security Research"
+                  footer_text="Increase availability and performance of your apps to optimize user experience"
+                />
+              </Link>
+              <Link href="what-we-do/blockchain-sercurity">
+                <ServiceCard
+                  icon={<GoShieldCheck />}
+                  body_text="Threat Intelligence & Threat Hunting"
+                  footer_text="Meet customer demands and improve digital experiences."
+                />
+              </Link>
+              <Link href="what-we-do/blockchain-sercurity">
+                <ServiceCard
+                  icon={<MdOutlineFingerprint />}
+                  body_text="Incident Response & Forensics"
+                  footer_text="Protect against fraud while keeping apps available for legitimate users."
+                />
+              </Link>
+              <Link href="what-we-do/blockchain-sercurity">
+                <ServiceCard
+                  icon={<MdSecurity />}
+                  body_text="Malware Analysis"
+                  footer_text="Prevent unauthorized access to your networks, applications, and APIs"
+                />
+              </Link>
             </div>
           </div>
         </Tab>

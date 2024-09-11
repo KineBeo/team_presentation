@@ -3,8 +3,6 @@ import { ResourcesProps } from "../Resources";
 import { OverViewProps  } from "../Overview";
 import { exploreCysLabsProps } from "../ExploreCysLabsSection";
 import { NextStepProps } from "../NextSteps";
-import React from "react";
-import { Laptop, Cog, Headphones } from "lucide-react";
 export const overviewData : OverViewProps = {
   title:"Get App Security Without Compromise",
   description:["Attackers follow the money. In a digital economy, this means targeting web apps and APIs to exploit vulnerabilities, abuse business logic, and bypass access controls—leading to data breach, account takeover, and downtime that can devastate your business. In order to effectively mitigate these attacks, you need comprehensive, consistent security that protects your entire digital business—from code to runtime."

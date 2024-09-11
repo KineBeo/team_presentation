@@ -1,13 +1,13 @@
 import React from "react";
-import Benefits from "./Benefits";
-import ExploreCysLabs from "./ExploreCysLabs";
-import Overview from "./Overview";
-import Resources from "./Resources";
+import Benefits from "../Benefits";
+import ExploreCysLabs from "../ExploreCysLabs";
+import Overview from "../Overview";
+import Resources from "../Resources";
 import HeroSection from "@/components/HeroSection";
-import { exploreCysLabsData, overviewData, stepData } from "./Data";
+import { exploreCysLabsData, overviewData } from "./Data";
 import { benefitData } from "./Data";
 import { resourcesData } from "./Data";
-import NextSteps from "./NextSteps";
+import NextSteps from "../NextSteps";
 
 function ProductDevelopment() {
   return (

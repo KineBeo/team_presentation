@@ -15,11 +15,12 @@ export default function SupportMenuMobile() {
         <div>
             <div onClick={onOpen}>Support</div>
             <Modal
+                className="mobile:flex tablet:hidden"
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
+                scrollBehavior="normal"
                 size="full"
                 placement="top"
-                scrollBehavior="inside"
             >
                 <ModalContent>
                     {(onClose) => (

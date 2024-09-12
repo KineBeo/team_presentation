@@ -19,16 +19,17 @@ export default function MenuItemContent() {
     <div>
       <div onClick={onOpen}>Products</div>
       <Modal
+        className="mobile:flex tablet:hidden"
         isOpen={isOpen}
         onOpenChange={onOpenChange}
+        scrollBehavior="normal"
         size="full"
         placement="top"
-        scrollBehavior="inside"
       >
-        <ModalContent>
+        <ModalContent className="h-full">
           {(onClose) => (
             <>
-              <ModalBody className="p-0 overflow-auto">
+              <ModalBody className="p-0 h-full overflow-auto">
                 <div className="flex justify-center items-center border-slate-100 border-b-1 w-full min-h-10">
                   <h1 className="font-bold text-xl">PRODUCTS</h1>
                 </div>

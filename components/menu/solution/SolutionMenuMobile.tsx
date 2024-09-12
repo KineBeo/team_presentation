@@ -1,98 +1,110 @@
-import React, { useState } from "react";
 import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  useDisclosure,
-  Accordion,
-  AccordionItem,
+    Accordion,
+    AccordionItem,
+    Modal,
+    ModalBody,
+    ModalContent,
+    useDisclosure,
 } from "@nextui-org/react";
-import { Label } from "flowbite-react";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { MdKeyboardArrowUp } from "react-icons/md";
-import SolutionAccordion from "./SolutionAccordion";
-const footerSections = [
-  {
-    title: "WHAT WE OFFER",
-    items: ["Free Trials", "Products", "Solutions"],
-  },
-  {
-    title: "RESOURCES",
-    items: [
-      "Product Documentation",
-      "White Papers",
-      "Glossary",
-      "Customer Stories",
-      "Webinars",
-      "Free Online Courses",
-      "F5 Certification",
-      "LearnF5 Training",
-    ],
-  },
-  {
-    title: "SUPPORT",
-    items: [
-      "Manage Subscriptions",
-      "Support Portal",
-      "Professional Services",
-      "Create a Service Request",
-      "Software Downloads",
-    ],
-  },
-  {
-    title: "PARTNERS",
-    items: [
-      "Find a Reseller Partner",
-      "Technology Alliances",
-      "Become an F5 Partner",
-      "Login to Partner Central",
-    ],
-  },
-  {
-    title: "COMPANY",
-    items: [
-      "Contact Information",
-      "Compliance",
-      "Careers",
-      "Events",
-      "Diversity & Inclusion",
-      "Newsroom",
-      "Blog",
-      "Investor Relations",
-      "F5 NGINX",
-    ],
-  },
-];
-const SolutionMenuMobile = () => {
-  const [openSections, setOpenSections] = useState<number[]>([]);
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const defaultContent = "Lorem .";
-  const toggleSection = (index: number) => {
-    setOpenSections((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-  return (
-    <div>
-      <Label onClick={onOpen} className="text-base">
-        SOLUTIONS
-      </Label>
-      <Modal
-        className="mobile:flex tablet:hidden"
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        scrollBehavior="normal"
-        size="full"
-        placement="top"
-      >
-        <ModalContent className="mx-auto w-full max-w-[1300px] h-full">
-          <ModalBody className="flex lg:flex-row flex-col p-0 h-full overflow-auto">
-            <SolutionAccordion />
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-    </div>
-  );
-};
+import React from "react";
+import { BY_SOLUTION_AREA_ALL_ITEMS } from "./By_Solution_Area";
+import { BY_INDUSTRY_ALL_ITEMS } from "./By_Industry";
+import { BY_CLOUD_PARTNERS_ALL_ITEMS } from "./By_Cloud_Partners";
 
-export default SolutionMenuMobile;
+export default function MenuItemContent() {
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+    return (
+        <div>
+            <div onClick={onOpen}>Solutions</div>
+            <Modal
+                className="mobile:flex tablet:hidden"
+                isOpen={isOpen}
+                onOpenChange={onOpenChange}
+                scrollBehavior="normal"
+                size="full"
+                placement="top"
+            >
+                <ModalContent className="h-full">
+                    {(onClose) => (
+                        <>
+                            <ModalBody className="p-0 h-full overflow-auto">
+                                <div className="flex justify-center items-center border-slate-100 border-b-1 w-full min-h-10">
+                                    <h1 className="font-bold text-xl">SOLUTIONS</h1>
+                                </div>
+                                <div className="flex justify-start items-center border-slate-100 border-b-1 w-full h-10">
+                                    <p className="ml-4 font-bold text-xl">SOLUTIONS</p>
+                                </div>
+                                <p className="border-slate-100 ml-4 border-b-1 h-8 font-semibold text-xl">
+                                    View all solutions {">"}
+                                </p>
+                                <Accordion
+                                    className="mt-0 h-8 text-base"
+                                    selectionMode="multiple"
+                                >
+                                    <AccordionItem
+                                        title="By Solution Area"
+                                        className="border-slate-100 ml-4 border-b-1 font-semibold"
+                                    >
+                                        <p
+                                            key="index"
+                                            className="border-slate-100 ml-6 border-b-1 h-10"
+                                        >
+                                            View all F5 Distributed Cloud Service &gt;
+                                        </p>
+                                        {BY_SOLUTION_AREA_ALL_ITEMS.map((item, index) => (
+                                            <p
+                                                key="index"
+                                                className="border-slate-100 ml-10 border-b-1 h-10"
+                                            >
+                                                {item.title} &gt;
+                                            </p>
+                                        ))}
+                                    </AccordionItem>
+                                    <AccordionItem
+                                        title="By Industry"
+                                        className="border-slate-100 ml-4 border-b-1 font-semibold"
+                                    >
+                                        <p
+                                            key="index"
+                                            className="border-slate-100 ml-6 border-b-1 h-10"
+                                        >
+                                            View all F5 NGINX &gt;
+                                        </p>
+                                        {BY_INDUSTRY_ALL_ITEMS.map((item, index) => (
+                                            <p
+                                                key="index"
+                                                className="border-slate-100 ml-10 border-b-1 h-10"
+                                            >
+                                                {item.title} &gt;
+                                            </p>
+                                        ))}
+                                    </AccordionItem>
+                                    <AccordionItem
+                                        title="By Cloud Partners"
+                                        className="border-slate-100 ml-4 border-b-1 font-semibold"
+                                    >
+                                        <p
+                                            key="index"
+                                            className="border-slate-100 ml-6 border-b-1 h-10"
+                                        >
+                                            View all F5 BIG-IP &gt;
+                                        </p>
+                                        {BY_CLOUD_PARTNERS_ALL_ITEMS.map((item, index) => (
+                                            <p
+                                                key="index"
+                                                className="border-slate-100 ml-10 border-b-1 h-10"
+                                            >
+                                                {item.title} &gt;
+                                            </p>
+                                        ))}
+                                    </AccordionItem>
+                                </Accordion>
+                            </ModalBody>
+                        </>
+                    )}
+                </ModalContent>
+            </Modal>
+        </div>
+    );
+}

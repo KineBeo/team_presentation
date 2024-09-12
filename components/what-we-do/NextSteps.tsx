@@ -1,14 +1,14 @@
 import React from "react";
 import { Laptop, Cog, Headphones } from "lucide-react";
 
-interface StepProps {
+export interface NextStepProps {
   icon: React.ReactNode;
   title: React.ReactNode;
   description: string;
   buttonText: string;
 }
 
-const Step: React.FC<StepProps> = ({
+const Step: React.FC<NextStepProps> = ({
   icon,
   title,
   description,

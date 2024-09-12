@@ -7,16 +7,15 @@ import {
     useDisclosure,
 } from "@nextui-org/react";
 import React from "react";
-import { BY_SOLUTION_AREA_ALL_ITEMS } from "./By_Solution_Area";
-import { BY_INDUSTRY_ALL_ITEMS } from "./By_Industry";
-import { BY_CLOUD_PARTNERS_ALL_ITEMS } from "./By_Cloud_Partners";
+import { DOCUMENTATION_ALL_ITEMS } from "./Documentation";
+import { EDUCATION_ALL_ITEMS } from "./Education";
 
-export default function MenuItemContent() {
+export default function ResourcesMenuMobile() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
         <div>
-            <div onClick={onOpen}>Solutions</div>
+            <div onClick={onOpen}>Resources</div>
             <Modal
                 className="mobile:flex tablet:hidden"
                 isOpen={isOpen}
@@ -25,25 +24,19 @@ export default function MenuItemContent() {
                 size="full"
                 placement="top"
             >
-                <ModalContent className="h-full">
+                <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalBody className="p-0 h-full overflow-auto">
-                                <div className="flex justify-center items-center border-slate-100 border-b-1 w-full min-h-10">
-                                    <h1 className="font-bold text-xl">SOLUTIONS</h1>
+                            <ModalBody className="p-0 h-screen overflow-auto">
+                                <div className="flex justify-center items-center border-slate-100 border-b-1 w-full h-10">
+                                    <h1 className="font-bold text-xl">RESOURCES</h1>
                                 </div>
-                                <div className="flex justify-start items-center border-slate-100 border-b-1 w-full h-10">
-                                    <p className="ml-4 font-bold text-xl">SOLUTIONS</p>
-                                </div>
-                                <p className="border-slate-100 ml-4 border-b-1 h-8 font-semibold text-xl">
-                                    View all solutions {">"}
-                                </p>
                                 <Accordion
                                     className="mt-0 h-8 text-base"
                                     selectionMode="multiple"
                                 >
                                     <AccordionItem
-                                        title="By Solution Area"
+                                        title="Documentation"
                                         className="border-slate-100 ml-4 border-b-1 font-semibold"
                                     >
                                         <p
@@ -52,7 +45,7 @@ export default function MenuItemContent() {
                                         >
                                             View all F5 Distributed Cloud Service &gt;
                                         </p>
-                                        {BY_SOLUTION_AREA_ALL_ITEMS.map((item, index) => (
+                                        {DOCUMENTATION_ALL_ITEMS.map((item, index) => (
                                             <p
                                                 key="index"
                                                 className="border-slate-100 ml-10 border-b-1 h-10"
@@ -62,7 +55,7 @@ export default function MenuItemContent() {
                                         ))}
                                     </AccordionItem>
                                     <AccordionItem
-                                        title="By Industry"
+                                        title="Education"
                                         className="border-slate-100 ml-4 border-b-1 font-semibold"
                                     >
                                         <p
@@ -71,26 +64,7 @@ export default function MenuItemContent() {
                                         >
                                             View all F5 NGINX &gt;
                                         </p>
-                                        {BY_INDUSTRY_ALL_ITEMS.map((item, index) => (
-                                            <p
-                                                key="index"
-                                                className="border-slate-100 ml-10 border-b-1 h-10"
-                                            >
-                                                {item.title} &gt;
-                                            </p>
-                                        ))}
-                                    </AccordionItem>
-                                    <AccordionItem
-                                        title="By Cloud Partners"
-                                        className="border-slate-100 ml-4 border-b-1 font-semibold"
-                                    >
-                                        <p
-                                            key="index"
-                                            className="border-slate-100 ml-6 border-b-1 h-10"
-                                        >
-                                            View all F5 BIG-IP &gt;
-                                        </p>
-                                        {BY_CLOUD_PARTNERS_ALL_ITEMS.map((item, index) => (
+                                        {EDUCATION_ALL_ITEMS.map((item, index) => (
                                             <p
                                                 key="index"
                                                 className="border-slate-100 ml-10 border-b-1 h-10"

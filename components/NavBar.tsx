@@ -25,6 +25,8 @@ import SupportMenu from "./menu/support/SupportMenu";
 import SupportMenuMobile from "./menu/support/SupportMenuMobile";
 import CompanyMenu from "./menu/company/CompanyMenu";
 import GetInformationMenu from "./menu/getInfo/GetInformationMenu";
+import CompanyMenuMobile from "./menu/company/CompanyMenuMobile";
+import GetInformationMenuMobile from "./menu/getInfo/GetInformationMenuMobile";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -114,8 +116,10 @@ export default function NavBar() {
               {index === 2 ? <PartnerMenuMobile /> : <></>}
               {index === 3 ? <ResourcesMenuMobile /> : <></>}
               {index === 4 ? <SupportMenuMobile /> : <></>}
+              {index === 5 ? <CompanyMenuMobile /> : <></>}
+              {index === 6 ? <GetInformationMenuMobile /> : <></>}
               {/* Hoang Xuan Truong focus on this place, just place Menu like I did */}
-              {index > 4 ? item : <></>}
+              {index > 6 ? item : <></>}
               {/* {item} */}
             </Link>
           </NavbarMenuItem>

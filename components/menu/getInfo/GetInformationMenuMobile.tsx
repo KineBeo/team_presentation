@@ -8,12 +8,12 @@ import {
 } from "@nextui-org/react";
 import React from "react";
 
-export default function CompanyMenuMobile() {
+export default function GetInformationMenuMobile() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
         <div>
-            <div onClick={onOpen}>Company</div>
+            <div onClick={onOpen}>Get CYCSLAB</div>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}

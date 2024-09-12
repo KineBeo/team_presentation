@@ -74,7 +74,7 @@ const SolutionMenuMobile = () => {
   };
   return (
     <div>
-      <Label onClick={onOpen} className="text-base ">
+      <Label onClick={onOpen} className="text-base">
         SOLUTIONS
       </Label>
       <Modal
@@ -85,8 +85,8 @@ const SolutionMenuMobile = () => {
         size="full"
         placement="top"
       >
-        <ModalContent className="w-full h-full max-w-[1300px] mx-auto ">
-          <ModalBody className="flex flex-col h-full lg:flex-row p-0 overflow-auto">
+        <ModalContent className="mx-auto w-full max-w-[1300px] h-full">
+          <ModalBody className="flex lg:flex-row flex-col p-0 h-full overflow-auto">
             <SolutionAccordion />
           </ModalBody>
         </ModalContent>

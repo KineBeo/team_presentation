@@ -1,21 +1,22 @@
 import React from "react";
-import Benefits from "./Benefits";
-import ExploreSysLabs from "./ExploreSysLabs";
-import Overview from "./Overview";
-import Resources from "./Resources";
+import Benefits from "../Benefits";
+import ExploreCysLabs from "../ExploreCysLabs";
+import Overview from "../Overview";
+import Resources from "../Resources";
 import HeroSection from "@/components/HeroSection";
-import { resourcesData } from "./Data";
+import { exploreCysLabsData, overviewData } from "./Data";
 import { benefitData } from "./Data";
-import NextSteps from "./NextSteps";
+import { resourcesData } from "./Data";
+import NextSteps from "../NextSteps";
 
 function ProductDevelopment() {
   return (
     <section>
       <HeroSection />
       <div className="px-40 mobile:px-10 pt-20 mobile:pt-10">
-        <Overview />
+        <Overview data={overviewData} />
         <Benefits data={benefitData} />
-        <ExploreSysLabs />
+        <ExploreCysLabs data={exploreCysLabsData} />
         <Resources {...resourcesData} />
         <NextSteps />
       </div>

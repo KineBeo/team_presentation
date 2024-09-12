@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-interface FeatureSectionProps {
+export interface exploreCysLabsProps {
   title: string;
   description: string;
   imageSrc: string;
@@ -9,7 +9,7 @@ interface FeatureSectionProps {
   imagePosition?: "left" | "right";
 }
 
-const FeatureSection: React.FC<FeatureSectionProps> = ({
+const ExploreCysLabsSection: React.FC<exploreCysLabsProps> = ({
   title,
   description,
   imageSrc,
@@ -65,4 +65,4 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   );
 };
 
-export default FeatureSection;
+export default ExploreCysLabsSection;

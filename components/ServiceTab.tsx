@@ -44,35 +44,35 @@ export default function App() {
                   footer_text="Reduce risk and complexity so you can continue moving your business forward."
                 />
               </Link>
-              <Link href="what-we-do/blockchain-sercurity">
+              <Link href="what-we-do/blockchain-security">
                 <ServiceCard
                   icon={<IoCloudDoneOutline />}
                   body_text="Blockchain Security audit"
                   footer_text="Connect, secure, and manage apps and APIs across distributed multicloud and hybrid networks."
                 />
               </Link>
-              <Link href="what-we-do/blockchain-sercurity">
+              <Link href="what-we-do/security-research">
                 <ServiceCard
                   icon={<GrDocumentPerformance />}
                   body_text="Cyber Security Research"
                   footer_text="Increase availability and performance of your apps to optimize user experience"
                 />
               </Link>
-              <Link href="what-we-do/blockchain-sercurity">
+              <Link href="what-we-do/threat-hunting">
                 <ServiceCard
                   icon={<GoShieldCheck />}
                   body_text="Threat Intelligence & Threat Hunting"
                   footer_text="Meet customer demands and improve digital experiences."
                 />
               </Link>
-              <Link href="what-we-do/blockchain-sercurity">
+              <Link href="what-we-do/incident-response">
                 <ServiceCard
                   icon={<MdOutlineFingerprint />}
                   body_text="Incident Response & Forensics"
                   footer_text="Protect against fraud while keeping apps available for legitimate users."
                 />
               </Link>
-              <Link href="what-we-do/blockchain-sercurity">
+              <Link href="what-we-do/malware-analyze">
                 <ServiceCard
                   icon={<MdSecurity />}
                   body_text="Malware Analysis"

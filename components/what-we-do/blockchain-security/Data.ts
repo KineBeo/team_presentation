@@ -1,5 +1,52 @@
-import { BenefitProps } from "./Benefits";
-import { ResourcesProps } from "./Resources";
+import { BenefitProps } from "../Benefits";
+import { ResourcesProps } from "../Resources";
+import { OverViewProps  } from "../Overview";
+import { exploreCysLabsProps } from "../ExploreCysLabsSection";
+import { NextStepProps } from "../NextSteps";
+
+export const overviewData : OverViewProps = {
+  title:"Deliver Applications and APIs across Multicloud Environments with Speed and Security",
+  description:["Organizations now face a number of challenges in multicloud environments, including increased complexity, cost, and risk. F5 Distributed Cloud Services accelerates application deployments and migrations in hybrid and multicloud environments providing the security and resilience that modern digital infrastructures require."]
+}
+
+export const benefitData : BenefitProps[] = [
+  {
+    title:"Make Securing Multicloud Easy",
+    description:"With an easy, efficient way to secure, scale, optimize, and manage all applications—no matter where they’re deployed—businesses can flourish in the multicloud world."
+  },
+   {
+    title:"Enforce Consistent Security",
+    description:"Securing both network and applications can be challenging and difficult to manage under multicloud environment. F5 has a solution that solves the operational challenges."
+  },
+   {
+    title:"Deliver Efficient, Modern Applications",
+    description:"Under multiple cloud environments, efficiently managing modern apps is a critical factor for the success of the business. F5 offers faster, reliable application delivery with visibility."
+  }
+]
+export const exploreCysLabsData: exploreCysLabsProps[] =[
+ {
+      title : "Distributed App Security",
+      description:"Secure applications and APIs anywhere with SaaS-delivered web app and API protection to simplify operations and reduce complexity with centralized security policy enforcement and visibility.",
+      imageSrc:"/images/what-we-do/product-development/vignette-mitigate-app.png",
+      learnMoreLink:"#",
+      imagePosition:"left"
+},
+  {
+      title:"Hybrid and Multicloud Networking",
+      description:"Simplify network and application connectivity across distributed cloud environments while reducing the impact of skill gaps within your organization.",
+      imageSrc:"/images/what-we-do/product-development/vignette-mitigate-bots-abuse.png",
+      learnMoreLink:"#",
+      imagePosition:"right",
+    },
+    {
+       title:"Manage and Scale Edge Networks",
+        description:"Deploy and run container and microservice applications anywhere from edge to cloud with native lifecycle management and security.",
+        imageSrc:"/images/what-we-do/product-development/vignette-secure-APIs-third-party-integrations.png",
+        learnMoreLink:"#",
+        imagePosition:"left"
+    }
+
+]
 
 export const resourcesData: ResourcesProps = {
   featuredReport: {
@@ -34,23 +81,24 @@ export const resourcesData: ResourcesProps = {
     { title: "Transform Cloud Log Data into Business Intelligence", href: "#" },
   ],
 };
-
-export const benefitData : BenefitProps[] = [
+export const stepData : NextStepProps[] = [
   {
-    title:"Make Securing Multicloud Easy",
-    description:"With an easy, efficient way to secure, scale, optimize, and manage all applications—no matter where they’re deployed—businesses can flourish in the multicloud world."
+    icon :"Laptop",
+    title: "{<> Tour the F5 <br /> Product Demo <br /> Center</>}" ,
+    description: "See F5 Web App and API Protection solutions in action.",
+    buttonText:"Check it out"
   },
-   {
-    title:"Enforce Consistent Security",
-    description:"Securing both network and applications can be challenging and difficult to manage under multicloud environment. F5 has a solution that solves the operational challenges."
+    {
+    icon :"Laptop",
+    title: "{<> Tour the F5 <br /> Product Demo <br /> Center</>}" ,
+    description: "See how F5 app security solutions work with a free trial.",
+    buttonText:"Start today"
   },
-   {
-    title:"Deliver Efficient, Modern Applications",
-    description:"Under multiple cloud environments, efficiently managing modern apps is a critical factor for the success of the business. F5 offers faster, reliable application delivery with visibility."
-  },
-   {
-    title:"API Protection",
-    description:"F5 secures your APIs across a complex hybrid and multi-cloud fabric with F5® Distributed Cloud WAAP—reducing risk and complexity while improving operational efficiencies—so you maintain visibility and control across your entire digital ecosystem."
+    {
+    icon :"Laptop",
+    title: "{<> Tour the F5 <br /> Product Demo <br /> Center</>}" ,
+    description: "Find out how F5 products and solutions can enable you to achieve your goals.",
+    buttonText:"Contact us"
   }
-  
+
 ]
